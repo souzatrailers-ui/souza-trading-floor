@@ -1,0 +1,65 @@
+{
+ "source": "souza-algo paper trader",
+ "mode": "papel",
+ "currency": "USD",
+ "last_run": "2026-10-17T06:30:00+00:00",
+ "account": {
+  "currency": "USD",
+  "start_balance": 1000.0,
+  "balance": 1000.0,
+  "equity": 1000.0,
+  "unrealized_pnl": 0.0,
+  "pnl": 0.0,
+  "pnl_pct": 0.0,
+  "trades_closed": 0,
+  "wins": 0,
+  "win_rate": null,
+  "open_positions": 0
+ },
+ "strategies": [
+  {
+   "name": "SW_BREAKOUT",
+   "enabled": true,
+   "tier": "observação",
+   "roll_exp": 0.308442,
+   "roll_n": 30,
+   "source": "sombra+papel(0)",
+   "updated": "2026-10-17T06:30:57.105660+00:00"
+  },
+  {
+   "name": "TR_DONCHIAN",
+   "enabled": false,
+   "tier": "observação",
+   "roll_exp": -0.084936,
+   "roll_n": 30,
+   "source": "sombra+papel(0)",
+   "updated": "2026-10-17T06:30:56.830112+00:00"
+  }
+ ],
+ "positions": [],
+ "trades": [],
+ "trades_total": 0,
+ "events": [
+  {
+   "ts": "2026-10-17T04:03:23.652822+00:00",
+   "kind": "ESTRATÉGIA",
+   "msg": "SW_BREAKOUT LIGADA — expectativa móvel +0.308R (30 trades, fonte sombra+papel(0))"
+  },
+  {
+   "ts": "2026-10-17T04:03:23.376136+00:00",
+   "kind": "ESTRATÉGIA",
+   "msg": "TR_DONCHIAN DESLIGADA — expectativa móvel -0.085R (30 trades, fonte sombra+papel(0))"
+  }
+ ],
+ "equity_curve": [
+  [
+   "2026-10-17T04:03:00+00:00",
+   1000.0
+  ]
+ ],
+ "equity_last": [
+  "2026-10-17T06:30:00+00:00",
+  1000.0
+ ],
+ "generated_at": "2026-10-17T11:37:51+00:00"
+}
