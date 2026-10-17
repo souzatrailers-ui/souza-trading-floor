@@ -21,6 +21,13 @@ async function load() {
     `<div class="sub-h" style="margin-top:0">Estratégias</div><div class="pc-strats">${st.map(s => `<span class="${s.enabled ? 'on' : ''}" title="${s.enabled ? 'ligada' : 'desligada'}"><i></i>${esc(s.name)}</span>`).join('') || '<span>—</span>'}</div>` +
     (pos.length ? `<div class="sub-h">Posições abertas</div><ul class="pc-list">${pos.slice(0, 3).map(x => `<li><span>${esc(x.symbol)} · ${esc(x.side || 'long')}</span><span class="${cls(x.unrealized_pnl)}">${usd(x.unrealized_pnl)}</span></li>`).join('')}</ul>` : '') +
     `<div class="sub-h">Últimas operações</div><ul class="pc-list">${tr.map(x => `<li><span>${tm(x.time)} ${esc(x.symbol)} ${esc(x.side)}</span><span class="${cls(x.pnl)}">${n(x.pnl) === null ? nf(x.price) : usd(x.pnl)}</span></li>`).join('') || '<li><span>Nenhuma operação ainda</span><span></span></li>'}</ul>`;
+  const ap = p.approver;
+  if (ap && ap.enabled !== undefined) {
+    const ds = (ap.decisions || []).slice(0, 3);
+    $('#pcBody').insertAdjacentHTML('beforeend',
+      `<div class="sub-h" title="Portão real do paper trader: mesmas regras do Aprovador do pregão, só com dados disponíveis (Cético e Notícias não pontuados)">Aprovador · portão real ${ap.enabled ? `<span class="up">ligado</span> · limite ${esc(ap.threshold)}` : '<span class="down">desligado</span>'}${ap.kill_switch ? ' · <span class="down">KILL</span>' : ''} · ${ap.approved ?? 0} aprov. / ${ap.rejected ?? 0} rej.</div>` +
+      `<ul class="pc-gate">${ds.map(d => `<li class="${d.decision === 'APROVADO' ? 'ok' : 'no'}"><b>${esc(d.decision)}</b> ${esc(d.strategy)} ${esc(d.symbol)} · score <b>${esc(d.score)}</b>${d.decision === 'APROVADO' && +d.size_mult < 1 ? ' · ×' + nf(d.size_mult, 1) : ''}<small>${tm(d.ts)} · ${(d.reasons || []).slice(0, 3).map(esc).join(' · ')}</small></li>`).join('') || '<li>Nenhum sinal avaliado ainda — o portão roda a cada 15 min, antes de abrir posições de papel.</li>'}</ul>`);
+  }
   $('#pcUpdated').textContent = 'exportado ' + tm(p.generated_at);
   $('#pcSub').textContent = `paper trader · início US$ ${nf(start, 0)} · ${a.trades_closed ?? 0} trades`;
 }
