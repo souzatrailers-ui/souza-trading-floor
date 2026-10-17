@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-17T12:00:00+00:00",
+ "last_run": "2026-10-17T16:15:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -24,7 +24,7 @@
    "roll_exp": 0.308442,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-17T12:00:57.561143+00:00"
+   "updated": "2026-10-17T16:15:57.982077+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": -0.084936,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-17T12:00:57.163934+00:00"
+   "updated": "2026-10-17T16:15:57.587925+00:00"
   }
  ],
  "positions": [],
@@ -58,7 +58,7 @@
   ]
  ],
  "equity_last": [
-  "2026-10-17T12:00:00+00:00",
+  "2026-10-17T16:15:00+00:00",
   1000.0
  ],
  "approver": {
@@ -84,5 +84,767 @@
   "rejected": 0,
   "decisions": []
  },
- "generated_at": "2026-10-17T12:08:39+00:00"
+ "lessons": {
+  "schema": "brain.lesson.v1",
+  "window_days": 7,
+  "paper_total": 0,
+  "shadow_total": 0,
+  "weekly": [],
+  "weekly_shadow": [],
+  "backtest_prior": {
+   "total": 15634,
+   "weight": 0.25,
+   "cap_n_eff": 10.0,
+   "top": [
+    {
+     "lesson_code": "py.learn.lesson.counter_win",
+     "strategy": "ID_VWAP_REV",
+     "side": null,
+     "count": 1795,
+     "avg_R": 0.806,
+     "win_rate": 100.0,
+     "top_symbols": [
+      "XRPUSDT",
+      "BTCUSDT",
+      "ETHUSDT"
+     ],
+     "lesson_pt": "Ganho contra o BTC em ID_VWAP_REV é exceção, não regra: exigir confirmação",
+     "lesson_en": "A win against BTC in ID_VWAP_REV is the exception, not the rule: require confirmation",
+     "code": {
+      "key": "py.learn.lesson.counter_win",
+      "params": {
+       "strategy": "ID_VWAP_REV",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.stop_normal",
+     "strategy": "ID_ORB",
+     "side": null,
+     "count": 1447,
+     "avg_R": -1.323,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "SOLUSDT",
+      "ETHUSDT",
+      "LTCUSDT"
+     ],
+     "lesson_pt": "Stop normal dentro do risco planejado em ID_ORB: aceitar a perda e seguir o plano",
+     "lesson_en": "Normal stop within planned risk in ID_ORB: accept the loss and follow the plan",
+     "code": {
+      "key": "py.learn.lesson.stop_normal",
+      "params": {
+       "strategy": "ID_ORB",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.avoid_against_btc",
+     "strategy": "ID_VWAP_REV",
+     "side": "SHORT",
+     "count": 1291,
+     "avg_R": -1.218,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "BTCUSDT",
+      "TRXUSDT",
+      "BNBUSDT"
+     ],
+     "lesson_pt": "Evitar SHORT contra a tendência do BTC em ID_VWAP_REV",
+     "lesson_en": "Avoid SHORT against the BTC trend in ID_VWAP_REV",
+     "code": {
+      "key": "py.learn.lesson.avoid_against_btc",
+      "params": {
+       "strategy": "ID_VWAP_REV",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.avoid_against_btc",
+     "strategy": "ID_VWAP_REV",
+     "side": "LONG",
+     "count": 1180,
+     "avg_R": -1.148,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "BTCUSDT",
+      "XRPUSDT",
+      "TRXUSDT"
+     ],
+     "lesson_pt": "Evitar LONG contra a tendência do BTC em ID_VWAP_REV",
+     "lesson_en": "Avoid LONG against the BTC trend in ID_VWAP_REV",
+     "code": {
+      "key": "py.learn.lesson.avoid_against_btc",
+      "params": {
+       "strategy": "ID_VWAP_REV",
+       "side": "LONG"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.no_chase",
+     "strategy": "ID_ORB",
+     "side": null,
+     "count": 1072,
+     "avg_R": -1.299,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "BTCUSDT",
+      "BNBUSDT",
+      "ETCUSDT"
+     ],
+     "lesson_pt": "Não perseguir preço esticado (> 2 ATR da EMA50) em ID_ORB",
+     "lesson_en": "Don't chase an extended price (> 2 ATR from the EMA50) in ID_ORB",
+     "code": {
+      "key": "py.learn.lesson.no_chase",
+      "params": {
+       "strategy": "ID_ORB",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.high_vol",
+     "strategy": "ID_ORB",
+     "side": null,
+     "count": 936,
+     "avg_R": -1.136,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "UNIUSDT",
+      "DOGEUSDT",
+      "XRPUSDT"
+     ],
+     "lesson_pt": "Alta volatilidade: reduzir tamanho ou esperar regime normal em ID_ORB",
+     "lesson_en": "High volatility: cut size or wait for a normal regime in ID_ORB",
+     "code": {
+      "key": "py.learn.lesson.high_vol",
+      "params": {
+       "strategy": "ID_ORB",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.avoid_against_btc",
+     "strategy": "MR_BB_RSI",
+     "side": "LONG",
+     "count": 595,
+     "avg_R": -1.055,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "BTCUSDT",
+      "XRPUSDT",
+      "SOLUSDT"
+     ],
+     "lesson_pt": "Evitar LONG contra a tendência do BTC em MR_BB_RSI",
+     "lesson_en": "Avoid LONG against the BTC trend in MR_BB_RSI",
+     "code": {
+      "key": "py.learn.lesson.avoid_against_btc",
+      "params": {
+       "strategy": "MR_BB_RSI",
+       "side": "LONG"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.counter_win",
+     "strategy": "MR_BB_RSI",
+     "side": null,
+     "count": 573,
+     "avg_R": 1.401,
+     "win_rate": 100.0,
+     "top_symbols": [
+      "BTCUSDT",
+      "SOLUSDT",
+      "BNBUSDT"
+     ],
+     "lesson_pt": "Ganho contra o BTC em MR_BB_RSI é exceção, não regra: exigir confirmação",
+     "lesson_en": "A win against BTC in MR_BB_RSI is the exception, not the rule: require confirmation",
+     "code": {
+      "key": "py.learn.lesson.counter_win",
+      "params": {
+       "strategy": "MR_BB_RSI",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.avoid_against_btc",
+     "strategy": "MR_BB_RSI",
+     "side": "SHORT",
+     "count": 545,
+     "avg_R": -1.101,
+     "win_rate": 0.0,
+     "top_symbols": [
+      "XRPUSDT",
+      "BTCUSDT",
+      "ADAUSDT"
+     ],
+     "lesson_pt": "Evitar SHORT contra a tendência do BTC em MR_BB_RSI",
+     "lesson_en": "Avoid SHORT against the BTC trend in MR_BB_RSI",
+     "code": {
+      "key": "py.learn.lesson.avoid_against_btc",
+      "params": {
+       "strategy": "MR_BB_RSI",
+       "side": "SHORT"
+      }
+     }
+    },
+    {
+     "lesson_code": "py.learn.lesson.with_trend",
+     "strategy": "ID_ORB",
+     "side": "LONG",
+     "count": 472,
+     "avg_R": 1.75,
+     "win_rate": 100.0,
+     "top_symbols": [
+      "BTCUSDT",
+      "FILUSDT",
+      "XRPUSDT"
+     ],
+     "lesson_pt": "LONG a favor do BTC e do gráfico funcionou em ID_ORB: manter o filtro de tendência",
+     "lesson_en": "LONG with the BTC and chart trend worked in ID_ORB: keep the trend filter",
+     "code": {
+      "key": "py.learn.lesson.with_trend",
+      "params": {
+       "strategy": "ID_ORB",
+       "side": "LONG"
+      }
+     }
+    }
+   ],
+   "regimes": [
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "against",
+     "vol": "high",
+     "n": 158,
+     "exp_R": -0.52
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "against",
+     "vol": "low",
+     "n": 259,
+     "exp_R": -0.608
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "against",
+     "vol": "normal",
+     "n": 139,
+     "exp_R": -0.412
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "mixed",
+     "vol": "high",
+     "n": 549,
+     "exp_R": -0.338
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 890,
+     "exp_R": -0.639
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "mixed",
+     "vol": "normal",
+     "n": 674,
+     "exp_R": -0.452
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "with",
+     "vol": "high",
+     "n": 916,
+     "exp_R": -0.109
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "with",
+     "vol": "low",
+     "n": 1178,
+     "exp_R": -0.415
+    },
+    {
+     "strategy": "ID_ORB",
+     "btc_align": "with",
+     "vol": "normal",
+     "n": 950,
+     "exp_R": -0.186
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "against",
+     "vol": "high",
+     "n": 2498,
+     "exp_R": -0.252
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "against",
+     "vol": "low",
+     "n": 873,
+     "exp_R": -0.412
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "against",
+     "vol": "normal",
+     "n": 1264,
+     "exp_R": -0.318
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "mixed",
+     "vol": "high",
+     "n": 396,
+     "exp_R": -0.301
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 205,
+     "exp_R": -0.579
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "mixed",
+     "vol": "normal",
+     "n": 212,
+     "exp_R": -0.392
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "with",
+     "vol": "high",
+     "n": 87,
+     "exp_R": -0.587
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "with",
+     "vol": "low",
+     "n": 59,
+     "exp_R": -0.728
+    },
+    {
+     "strategy": "ID_VWAP_REV",
+     "btc_align": "with",
+     "vol": "normal",
+     "n": 51,
+     "exp_R": -0.527
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "against",
+     "vol": "high",
+     "n": 893,
+     "exp_R": -0.165
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "against",
+     "vol": "low",
+     "n": 482,
+     "exp_R": -0.148
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "against",
+     "vol": "normal",
+     "n": 528,
+     "exp_R": -0.215
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "mixed",
+     "vol": "high",
+     "n": 222,
+     "exp_R": -0.053
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 152,
+     "exp_R": -0.384
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "mixed",
+     "vol": "normal",
+     "n": 180,
+     "exp_R": -0.301
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "with",
+     "vol": "high",
+     "n": 29,
+     "exp_R": 0.234
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "with",
+     "vol": "low",
+     "n": 21,
+     "exp_R": -0.179
+    },
+    {
+     "strategy": "MR_BB_RSI",
+     "btc_align": "with",
+     "vol": "normal",
+     "n": 24,
+     "exp_R": -0.321
+    },
+    {
+     "strategy": "SW_BREAKOUT",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 42,
+     "exp_R": 0.084
+    },
+    {
+     "strategy": "SW_BREAKOUT",
+     "btc_align": "with",
+     "vol": "low",
+     "n": 50,
+     "exp_R": 0.149
+    },
+    {
+     "strategy": "SW_BREAKOUT",
+     "btc_align": "with",
+     "vol": "normal",
+     "n": 27,
+     "exp_R": 0.326
+    },
+    {
+     "strategy": "SW_PULLBACK",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 58,
+     "exp_R": 0.044
+    },
+    {
+     "strategy": "SW_PULLBACK",
+     "btc_align": "mixed",
+     "vol": "normal",
+     "n": 20,
+     "exp_R": -0.06
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "against",
+     "vol": "high",
+     "n": 20,
+     "exp_R": -0.348
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "mixed",
+     "vol": "high",
+     "n": 57,
+     "exp_R": -0.112
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 22,
+     "exp_R": -0.013
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "mixed",
+     "vol": "normal",
+     "n": 27,
+     "exp_R": 0.335
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "with",
+     "vol": "high",
+     "n": 305,
+     "exp_R": 0.502
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "with",
+     "vol": "low",
+     "n": 90,
+     "exp_R": -0.46
+    },
+    {
+     "strategy": "TR_DONCHIAN",
+     "btc_align": "with",
+     "vol": "normal",
+     "n": 140,
+     "exp_R": -0.125
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "against",
+     "vol": "low",
+     "n": 22,
+     "exp_R": -0.24
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "mixed",
+     "vol": "high",
+     "n": 58,
+     "exp_R": -0.211
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "mixed",
+     "vol": "low",
+     "n": 78,
+     "exp_R": -0.067
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "mixed",
+     "vol": "normal",
+     "n": 59,
+     "exp_R": -0.217
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "with",
+     "vol": "high",
+     "n": 190,
+     "exp_R": -0.041
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "with",
+     "vol": "low",
+     "n": 182,
+     "exp_R": -0.045
+    },
+    {
+     "strategy": "TR_EMA_CROSS",
+     "btc_align": "with",
+     "vol": "normal",
+     "n": 193,
+     "exp_R": -0.136
+    }
+   ]
+  },
+  "brain_file": "data/brain/souza-algo.jsonl",
+  "note_pt": "Lições do próprio paper trader (papel e sombra) e prior do backtest OOS (peso menor). Só papel; não é recomendação.",
+  "note_en": "Lessons from the paper trader itself (paper and shadow) and the OOS backtest prior (lower weight). Paper only; not advice."
+ },
+ "ab_test": {
+  "enabled": true,
+  "mode": "paper",
+  "filter": {
+   "btc_trend": "BTCUSDT 4h close vs EMA200 (closed 4h candles only); LONG only if up, SHORT only if down",
+   "vol_sizing": "half size when the pair's ATR percentile > 80",
+   "params": "same as the live baseline strategy"
+  },
+  "demo_gate": {
+   "min_trades": 30,
+   "rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após taxas e slippage) > 0. Informativo: nada se conecta a conta demo ou corretora.",
+   "rule_en": "demo_ready = true only after >= 30 CLOSED paper trades with positive total net R (after fees and slippage). Informational only: nothing connects to a demo account or broker.",
+   "informational": true
+  },
+  "pairs": [
+   {
+    "strategy": "SW_BREAKOUT",
+    "enabled": true,
+    "tier": "observação",
+    "baseline": {
+     "name": "SW_BREAKOUT",
+     "account": "main",
+     "trades": 0,
+     "wins": 0,
+     "win_rate": null,
+     "net_R": 0,
+     "avg_R": null,
+     "pnl": 0,
+     "equity": 1000.0,
+     "open_positions": 0,
+     "demo_ready": false,
+     "demo_progress": "0/30"
+    },
+    "filtered": {
+     "name": "SW_BREAKOUT+F",
+     "account": "ab-filtered",
+     "trades": 0,
+     "wins": 0,
+     "win_rate": null,
+     "net_R": 0,
+     "avg_R": null,
+     "pnl": 0,
+     "equity": 1000.0,
+     "open_positions": 0,
+     "demo_ready": false,
+     "demo_progress": "0/30",
+     "filter_actions": {},
+     "approver": {}
+    },
+    "delta_net_R": 0
+   },
+   {
+    "strategy": "TR_DONCHIAN",
+    "enabled": false,
+    "tier": "observação",
+    "baseline": {
+     "name": "TR_DONCHIAN",
+     "account": "main",
+     "trades": 0,
+     "wins": 0,
+     "win_rate": null,
+     "net_R": 0,
+     "avg_R": null,
+     "pnl": 0,
+     "equity": 1000.0,
+     "open_positions": 0,
+     "demo_ready": false,
+     "demo_progress": "0/30"
+    },
+    "filtered": {
+     "name": "TR_DONCHIAN+F",
+     "account": "ab-filtered",
+     "trades": 0,
+     "wins": 0,
+     "win_rate": null,
+     "net_R": 0,
+     "avg_R": null,
+     "pnl": 0,
+     "equity": 1000.0,
+     "open_positions": 0,
+     "demo_ready": false,
+     "demo_progress": "0/30",
+     "filter_actions": {},
+     "approver": {}
+    },
+    "delta_net_R": 0
+   }
+  ],
+  "variants": [
+   {
+    "name": "SW_BREAKOUT",
+    "account": "main",
+    "trades": 0,
+    "wins": 0,
+    "win_rate": null,
+    "net_R": 0,
+    "avg_R": null,
+    "pnl": 0,
+    "equity": 1000.0,
+    "open_positions": 0,
+    "demo_ready": false,
+    "demo_progress": "0/30"
+   },
+   {
+    "name": "TR_DONCHIAN",
+    "account": "main",
+    "trades": 0,
+    "wins": 0,
+    "win_rate": null,
+    "net_R": 0,
+    "avg_R": null,
+    "pnl": 0,
+    "equity": 1000.0,
+    "open_positions": 0,
+    "demo_ready": false,
+    "demo_progress": "0/30"
+   },
+   {
+    "name": "SW_BREAKOUT+F",
+    "account": "ab-filtered",
+    "trades": 0,
+    "wins": 0,
+    "win_rate": null,
+    "net_R": 0,
+    "avg_R": null,
+    "pnl": 0,
+    "equity": 1000.0,
+    "open_positions": 0,
+    "demo_ready": false,
+    "demo_progress": "0/30"
+   },
+   {
+    "name": "SW_PULLBACK+F",
+    "account": "ab-filtered",
+    "trades": 0,
+    "wins": 0,
+    "win_rate": null,
+    "net_R": 0,
+    "avg_R": null,
+    "pnl": 0,
+    "equity": 1000.0,
+    "open_positions": 0,
+    "demo_ready": false,
+    "demo_progress": "0/30"
+   },
+   {
+    "name": "TR_DONCHIAN+F",
+    "account": "ab-filtered",
+    "trades": 0,
+    "wins": 0,
+    "win_rate": null,
+    "net_R": 0,
+    "avg_R": null,
+    "pnl": 0,
+    "equity": 1000.0,
+    "open_positions": 0,
+    "demo_ready": false,
+    "demo_progress": "0/30"
+   }
+  ],
+  "standalone": [
+   {
+    "name": "SW_PULLBACK+F",
+    "account": "ab-filtered",
+    "base": "SW_PULLBACK",
+    "tf": "1d",
+    "params": {
+     "lo": 10,
+     "atr_k": 2.0,
+     "tp": 1.5
+    },
+    "enabled": true,
+    "backtest_ref": {
+     "path": "results/variants/20261017T1606Z",
+     "variant": "F",
+     "status": "operável",
+     "trades": 110,
+     "expectancy_R": 0.268,
+     "sharpe": 1.97,
+     "note": "frágil: IS exp ~0,007R; filtro com params da base (lo=5) = 44 trades OOS"
+    },
+    "base_live": false,
+    "trades": 0,
+    "wins": 0,
+    "win_rate": null,
+    "net_R": 0,
+    "avg_R": null,
+    "pnl": 0,
+    "equity": 1000.0,
+    "open_positions": 0,
+    "demo_ready": false,
+    "demo_progress": "0/30",
+    "filter_actions": {
+     "skip_btc": 2
+    },
+    "approver": {}
+   }
+  ],
+  "activity": 2
+ },
+ "generated_at": "2026-10-17T16:15:58+00:00"
 }
