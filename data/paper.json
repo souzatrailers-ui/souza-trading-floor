@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-17T06:30:00+00:00",
+ "last_run": "2026-10-17T12:00:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -24,7 +24,7 @@
    "roll_exp": 0.308442,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-17T06:30:57.105660+00:00"
+   "updated": "2026-10-17T12:00:57.561143+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": -0.084936,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-17T06:30:56.830112+00:00"
+   "updated": "2026-10-17T12:00:57.163934+00:00"
   }
  ],
  "positions": [],
@@ -58,8 +58,31 @@
   ]
  ],
  "equity_last": [
-  "2026-10-17T06:30:00+00:00",
+  "2026-10-17T12:00:00+00:00",
   1000.0
  ],
- "generated_at": "2026-10-17T11:37:51+00:00"
+ "approver": {
+  "enabled": true,
+  "threshold": 60,
+  "floor_pct": 4.5,
+  "dd_max_pct": 3.0,
+  "min_rr": 1.5,
+  "weights": {
+   "risco": 15,
+   "rr": 15,
+   "grafico": 15,
+   "exposicao": 10,
+   "tamanho": 5,
+   "historico": 10
+  },
+  "unscored": [
+   "Cético",
+   "Notícias"
+  ],
+  "kill_switch": false,
+  "approved": 0,
+  "rejected": 0,
+  "decisions": []
+ },
+ "generated_at": "2026-10-17T12:08:39+00:00"
 }
