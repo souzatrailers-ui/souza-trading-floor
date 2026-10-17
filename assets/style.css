@@ -84,7 +84,7 @@ main{max-width:1680px;margin:0 auto;padding:18px 22px 10px}
 .lb-total b{font-size:24px;font-family:var(--mono);line-height:1}
 .lb-total small{font-family:var(--mono);font-size:11px;color:#a8925a}
 .lb-rows{position:relative;height:168px}
-.lb-row{position:absolute;left:0;right:0;height:23px;display:grid;grid-template-columns:22px 18px 1fr 58px 90px 84px;align-items:center;gap:8px;font-size:12.5px;transition:top .6s cubic-bezier(.3,1.3,.5,1);padding:0 6px;border-radius:6px;cursor:pointer}
+.lb-row{position:absolute;left:0;right:0;height:23px;display:grid;grid-template-columns:22px 18px 1fr 58px 90px 84px;align-items:center;gap:8px;font-size:12.5px;transition:top .45s ease-in-out;padding:0 6px;border-radius:6px;cursor:pointer}
 .lb-row:hover{background:#ffffff0a}
 .lb-row .rk{font-family:var(--mono);color:#a8925a;font-weight:700}
 .lb-row.r1 .rk{color:#fde047}
