@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Souza Trading Floor · Pregão de agentes (simulado)</title>
+<meta name="description" content="Souza Trading Floor — pregão virtual de agentes de IA. Dados simulados, modo papel.">
+<meta name="theme-color" content="#07080d">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#pregao" aria-label="Souza Trading Floor">
+    <img src="assets/favicon.svg" alt="" width="34" height="34">
+    <div><h1>Souza <span>Trading Floor</span></h1><p>Pregão de agentes de IA</p></div>
+  </a>
+  <nav class="tabs" aria-label="Seções">
+    <a href="#pregao" data-tab="pregao" class="active">Pregão</a>
+    <a href="#fluxo" data-tab="fluxo">Fluxo</a>
+    <a href="#aprovacoes" data-tab="aprovacoes">Aprovações <b id="qCount">0</b></a>
+  </nav>
+  <div class="top-right">
+    <span class="sim-badge" title="Nenhum dado real. Preços gerados por passeio aleatório em JavaScript."><i></i>Dados simulados · modo papel</span>
+    <span class="floor-status" id="floorStatus"><i></i>Pregão ativo</span>
+    <span class="clock" id="clock">--:--:--</span>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Cotações simuladas"><div class="ticker-track" id="tickerTrack"></div></div>
+
+<div class="kill-banner" id="killBanner" hidden>
+  <b>KILL SWITCH ACIONADO</b> — todos os agentes pausados, fila congelada e posições em papel zeradas.
+  <button class="btn ghost" id="rearmBtn">Rearmar pregão</button>
+</div>
+
+<main>
+  <section id="pregao" class="floor-section">
+    <div class="floor-col">
+      <div class="section-head">
+        <div>
+          <h2>Pregão <small>Trading floor</small></h2>
+          <p>Cada mesa é um agente. Clique em uma mesa para abrir o chat com as últimas notas.</p>
+        </div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="agent-chips" id="agentChips"></div>
+      <div class="floor-wrap" id="floorWrap">
+        <div class="floor-inner" id="floorInner">
+          <div class="stage" id="stage">
+            <svg class="floor-grid" id="floorGrid" aria-hidden="true"></svg>
+            <svg class="links" id="links" aria-hidden="true"></svg>
+            <div id="decor" aria-hidden="true"></div>
+            <div class="leaderboard" id="leaderboard">
+              <div class="lb-screen">
+                <div class="lb-head">
+                  <span class="trophy">🏆</span>
+                  <div class="lb-title"><b>Ranking ao Vivo</b><small>Live Leaderboard · P&amp;L em papel</small></div>
+                  <div class="lb-total"><b id="lbTotal">+0,00%</b><small id="lbTotalUsd">US$ 0</small></div>
+                </div>
+                <div class="lb-rows" id="lbRows"></div>
+              </div>
+              <div class="lb-stand"></div>
+            </div>
+            <div id="pods"></div>
+            <div id="packets"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="side">
+      <div class="card risk-card">
+        <div class="card-h"><span class="bot xs" style="--c:#f472b6"></span><div><b>Mesa de Risco</b><small>CRO · kill 4,5%</small></div><span class="pill" id="riskPill">OK</span></div>
+        <div class="meter" title="Uso do piso de perda diária (4,5%)"><div class="meter-fill" id="riskFill"></div><span class="meter-mark">piso −4,5%</span></div>
+        <div class="stats3">
+          <div><small>Drawdown do dia</small><b id="ddVal">0,00%</b></div>
+          <div><small>Risco aberto</small><b id="openRiskVal">0,00%</b></div>
+          <div><small>Banca (papel)</small><b id="bancaVal">US$ 100.000</b></div>
+        </div>
+        <button class="btn kill" id="killBtn">⏻ Acionar kill switch</button>
+      </div>
+
+      <div class="card queue-card" id="aprovacoes">
+        <div class="card-h"><span class="ico">⏳</span><div><b>Fila de aprovação</b><small>O Executor só age depois de você</small></div><span class="pill" id="qPill">0</span></div>
+        <div class="queue" id="queue"><p class="empty">Nenhuma proposta aguardando. O próximo ciclo do fluxo traz novas ideias.</p></div>
+        <div class="positions">
+          <div class="sub-h">Posições em papel · Executor</div>
+          <div id="positions"><p class="empty">Sem posições abertas.</p></div>
+        </div>
+      </div>
+
+      <div class="card feed-card">
+        <div class="card-h"><span class="ico">📡</span><div><b>Atividade ao vivo</b><small>Notas dos agentes</small></div></div>
+        <ul class="feed" id="feed"></ul>
+      </div>
+    </aside>
+  </section>
+
+  <section id="fluxo" class="flow-section">
+    <div class="section-head">
+      <div>
+        <h2>Fluxo <small>Agent pipeline</small></h2>
+        <p>Cada ciclo leva uma nota de <b>Dados</b> até o <b>Painel</b>. Ideias aprovadas pelo Cético e pelo Risco viram propostas na fila de aprovação.</p>
+      </div>
+      <div class="flow-stats">
+        <div><small>Ciclos</small><b id="stCycles">0</b></div>
+        <div><small>Propostas</small><b id="stProps">0</b></div>
+        <div><small>Aprovadas</small><b id="stApproved">0</b></div>
+        <div><small>Rejeitadas</small><b id="stRejected">0</b></div>
+        <button class="btn primary" id="btnCycle">▶ Rodar ciclo agora</button>
+      </div>
+    </div>
+    <div class="flow" id="flow"></div>
+    <div class="card flow-log-card">
+      <div class="card-h"><span class="ico">🧾</span><div><b>Registro do fluxo</b><small>Notas passando entre os agentes</small></div></div>
+      <ol class="flow-log" id="flowLog"></ol>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p><b>Souza Trading Floor</b> · demonstração interativa. <b>Todos os dados são simulados</b> (passeio aleatório em JavaScript) e as operações são apenas em papel. Nenhuma corretora, chave de API ou dinheiro real está conectado. Não é recomendação de investimento.</p>
+</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Chat com agente">
+  <div class="dr-head">
+    <div class="dr-ava"><span class="bot" id="drBot"></span></div>
+    <div class="dr-title"><b id="drName">Agente</b><small id="drSub">função</small></div>
+    <button class="x" id="drClose" aria-label="Fechar">×</button>
+  </div>
+  <div class="dr-stats" id="drStats"></div>
+  <div class="dr-body" id="drBody"></div>
+  <form class="dr-input" id="drForm" autocomplete="off">
+    <input id="drInput" placeholder="Pergunte qualquer coisa…" maxlength="240">
+    <button class="btn primary" type="submit">Enviar</button>
+  </form>
+  <p class="dr-note">Respostas simuladas · nenhuma IA ou corretora real conectada</p>
+</aside>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
