@@ -1,0 +1,56 @@
+.lab{max-width:1480px}
+.lab code{font-family:var(--mono);font-size:12px;background:#0a0c14;border:1px solid var(--line);padding:1px 5px;border-radius:5px}
+.lab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:18px}
+.lab-grid .span2{grid-column:span 2}
+.lab-sub{margin-top:26px}
+.lab-empty{margin-bottom:16px;border-color:#7c5e10;text-align:center}
+.lab-empty p{margin:6px 0 0;color:var(--muted)}
+.tbl-wrap{overflow:auto;max-height:440px;border-radius:10px;border:1px solid var(--line)}
+.tbl-wrap.tall{max-height:520px}
+.tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.tbl th,.tbl td{padding:7px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+.tbl th{position:sticky;top:0;background:#0d1019;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.6px;cursor:pointer;user-select:none}
+.tbl th:first-child,.tbl td:first-child,.tbl td.l,.tbl th.l{text-align:left}
+.tbl td{font-family:var(--mono)}
+.tbl td.name{font-family:var(--sans);font-weight:600}
+.tbl tbody tr:hover{background:#ffffff06}
+.tbl .rank{color:var(--dim);width:28px}
+.tbl tr.top td.rank{color:var(--gold);font-weight:800}
+.chart{width:100%;height:300px;position:relative}
+.chart.small{height:150px;margin-top:4px}
+.chart svg{width:100%;height:100%;display:block}
+.chart .ax{stroke:var(--line2);stroke-width:1}
+.chart .grid{stroke:#ffffff0d}
+.chart text{fill:var(--dim);font-size:10px;font-family:var(--mono)}
+.chart .tip{position:absolute;pointer-events:none;background:#0b0d16f0;border:1px solid var(--line2);border-radius:8px;padding:6px 9px;font-size:11.5px;font-family:var(--mono);white-space:nowrap;z-index:5}
+.chart-legend{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:8px;font-size:11.5px;color:var(--muted)}
+.chart-legend span{display:inline-flex;align-items:center;gap:6px}
+.chart-legend i{width:12px;height:3px;border-radius:2px;background:var(--c)}
+.heat{border-collapse:separate;border-spacing:3px;font-size:11.5px;font-family:var(--mono);width:100%}
+.heat th{color:var(--muted);font-weight:600;padding:4px 6px;white-space:nowrap;font-family:var(--sans)}
+.heat th.row{text-align:left}
+.heat td{text-align:center;padding:7px 4px;border-radius:6px;min-width:58px;color:#0b0d16;font-weight:700}
+.heat td.na{background:#0a0c14;color:var(--dim);font-weight:400}
+.strat-list{display:flex;flex-direction:column;gap:6px}
+.strat-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#0a0c14}
+.strat-row b{font-size:13px}
+.strat-row small{display:block;font-size:11px}
+.strat-row .sw{margin-left:auto;width:38px;height:20px;border-radius:999px;background:#2a2f45;position:relative;flex:none}
+.strat-row .sw::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#6b7194;transition:.2s}
+.strat-row.on .sw{background:#14532d}
+.strat-row.on .sw::after{left:21px;background:var(--up);box-shadow:0 0 8px var(--up)}
+.strat-row .st{font-size:11px;font-weight:700;font-family:var(--mono);width:34px;text-align:right}
+.strat-row.on .st{color:var(--up)} .strat-row:not(.on) .st{color:var(--dim)}
+@media (max-width:1000px){.lab-grid{grid-template-columns:1fr}.lab-grid .span2{grid-column:auto}}
+@media (max-width:860px){.lab-page .top-right .clock{display:none}}
+.lab .lnk{color:var(--teal);font-weight:700}
+.verdict{border-left:4px solid var(--yellow);margin-bottom:16px;color:#e9e3c8;line-height:1.55}
+.note{color:var(--dim);font-size:11.5px;margin:8px 2px 0}
+.btn.mini{margin-left:auto;padding:4px 9px;font-size:11px}
+.stt{padding:2px 8px;border-radius:6px;font-size:10.5px;font-weight:800;font-family:var(--sans);letter-spacing:.3px}
+.stt.op{background:#052e16;color:var(--up)} .stt.ob{background:#3b2a06;color:var(--yellow)} .stt.rp{background:#3a0d0d;color:var(--red)}
+.lab-feed{max-height:300px;overflow:auto;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.lab-feed li{display:flex;gap:10px;font-size:12.5px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:#0a0c14}
+.lab-feed li time{font-family:var(--mono);color:var(--dim);white-space:nowrap}
+.lab-feed li b{white-space:nowrap}
+.tbl td.par{color:var(--muted);font-family:var(--mono);font-size:11px;text-align:left}

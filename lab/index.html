@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laboratório · Souza Trading Floor</title>
+<meta name="description" content="Laboratório de estratégias: backtests e conta de papel (dados reais do paper trader, sem dinheiro real).">
+<meta name="theme-color" content="#07080d">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/lab.css">
+</head>
+<body class="lab-page">
+<header class="topbar">
+  <a class="brand" href="../" aria-label="Souza Trading Floor">
+    <img src="../assets/favicon.svg" alt="" width="34" height="34">
+    <div><h1>Souza <span>Trading Floor</span></h1><p>Laboratório de estratégias</p></div>
+  </a>
+  <nav class="tabs" aria-label="Seções">
+    <a href="../#pregao">Pregão</a>
+    <a href="../#fluxo">Fluxo</a>
+    <a href="../#aprovacoes">Aprovações</a>
+    <a href="./" class="active">Laboratório</a>
+  </nav>
+  <div class="top-right">
+    <span class="real-badge" title="Números exportados do paper trader (souza-algo). Operações em papel, sem dinheiro real."><i></i>Dados reais · conta de papel</span>
+    <span class="clock" id="updated">--</span>
+  </div>
+</header>
+
+<main class="lab">
+  <div class="section-head">
+    <div>
+      <h2>Laboratório <small>Strategy lab</small></h2>
+      <p>Backtests (dados públicos da Binance, 20 pares) e a conta de papel do <b>souza-algo</b>. Diferente do Pregão, <b>nada aqui é animação</b>: tudo vem de <code>data/lab.json</code> e <code>data/paper.json</code>, exportados pelo paper trader. <a class="lnk" href="painel.html">Painel clássico →</a></p>
+    </div>
+    <div class="flow-stats" id="kpis"></div>
+  </div>
+
+  <div class="lab-empty card" id="emptyState" hidden>
+    <b>Aguardando a primeira exportação do paper trader.</b>
+    <p>Os arquivos <code>data/lab.json</code> / <code>data/paper.json</code> ainda não foram publicados.</p>
+  </div>
+
+  <div class="card verdict" id="verdict" hidden></div>
+
+  <section class="lab-grid">
+    <div class="card span2">
+      <div class="card-h"><span class="ico">🏁</span><div><b>Ranking de estratégias</b><small id="rankSub">Parâmetros escolhidos só no in-sample · out-of-sample a partir de 2026-01-01</small></div><span class="pill" id="rankPill">0</span></div>
+      <div class="tbl-wrap"><table class="tbl" id="rankTbl"></table></div>
+      <p class="note">Zona operável = expectativa OOS &gt; 0 líquida de taxas (0,1%/lado) e slippage (0,05%/lado), ≥ 100 trades OOS, expectativa IS &gt; 0 e walk-forward &gt; 0. Payoff = ganho médio ÷ perda média (em R).</p>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span class="ico">🎯</span><div><b>Payoff × taxa de acerto</b><small>OOS · área verde = expectativa &gt; 0 · pontos pequenos = pares</small></div></div>
+      <div class="chart" id="scatter"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span class="ico">📈</span><div><b>Curvas de capital</b><small>R acumulado, todos os pares</small></div><button class="btn mini" id="eqBtn">mostrar todas</button></div>
+      <div class="chart" id="curves"></div>
+      <div class="chart-legend" id="curvesLegend"></div>
+    </div>
+
+    <div class="card span2">
+      <div class="card-h"><span class="ico">🔥</span><div><b>Mapa de calor</b><small>Expectativa OOS por par (R/trade)</small></div></div>
+      <div class="tbl-wrap"><table class="heat" id="heat"></table></div>
+      <p class="note">Com 7 estratégias × 20 pares, alguns pares verdes aparecem por puro acaso. O paper trader opera por estratégia, não escolhe pares a dedo.</p>
+    </div>
+  </section>
+
+  <div class="section-head lab-sub">
+    <div>
+      <h2>Conta de papel <small>Paper account · dados reais</small></h2>
+      <p>Execução simulada contra candles reais (Binance público), a cada 15 min. Sem corretora, sem chave de API, sem dinheiro real.</p>
+    </div>
+  </div>
+
+  <section class="lab-grid">
+    <div class="card">
+      <div class="card-h"><span class="ico">💼</span><div><b>Conta</b><small id="acctSub">—</small></div><span class="pill" id="acctPill">—</span></div>
+      <div class="stats3" id="acctStats"></div>
+      <div class="chart small" id="acctCurve"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><span class="ico">⚙️</span><div><b>Estratégias ligadas / desligadas</b><small>Desliga se a expectativa móvel (30 trades) &lt; 0 · religa acima de +0,05R</small></div></div>
+      <div class="strat-list" id="strats"></div>
+    </div>
+
+    <div class="card span2">
+      <div class="card-h"><span class="ico">📂</span><div><b>Posições abertas</b><small>Marcadas ao último candle fechado</small></div><span class="pill" id="posPill">0</span></div>
+      <div class="tbl-wrap"><table class="tbl" id="posTbl"></table></div>
+    </div>
+
+    <div class="card span2">
+      <div class="card-h"><span class="ico">🧾</span><div><b>Registro de operações</b><small>Trades fechados da conta de papel</small></div><span class="pill" id="trPill">0</span></div>
+      <div class="tbl-wrap tall"><table class="tbl" id="trTbl"></table></div>
+    </div>
+
+    <div class="card span2">
+      <div class="card-h"><span class="ico">📡</span><div><b>Eventos do paper trader</b><small>Aberturas, fechamentos e liga/desliga</small></div></div>
+      <ul class="feed lab-feed" id="events"></ul>
+    </div>
+  </section>
+  <p class="note" id="coverage"></p>
+</main>
+
+<footer class="foot">
+  <p><b>Laboratório</b> · dados exportados automaticamente pelo paper trader (no máximo 1×/hora quando há mudança). Operações apenas em papel; backtests não garantem resultado futuro. Não é recomendação de investimento.</p>
+</footer>
+<script src="../assets/lab.js"></script>
+</body>
+</html>

@@ -19,9 +19,11 @@
     <a href="#pregao" data-tab="pregao" class="active">Pregão</a>
     <a href="#fluxo" data-tab="fluxo">Fluxo</a>
     <a href="#aprovacoes" data-tab="aprovacoes">Aprovações <b id="qCount">0</b></a>
+    <a href="lab/" class="lab-link" title="Backtests e conta de papel reais">Laboratório</a>
   </nav>
   <div class="top-right">
-    <span class="sim-badge" title="Nenhum dado real. Preços gerados por passeio aleatório em JavaScript."><i></i>Dados simulados · modo papel</span>
+    <span class="sim-badge" title="Pregão, ticker, ranking, risco e fila são animação: preços gerados por passeio aleatório em JavaScript."><i></i>Pregão simulado</span>
+    <a class="real-badge" href="lab/" title="O card Conta de papel e o Laboratório mostram dados reais do paper trader (sem dinheiro real)."><i></i>Conta de papel real</a>
     <span class="floor-status" id="floorStatus"><i></i>Pregão ativo</span>
     <span class="clock" id="clock">--:--:--</span>
   </div>
@@ -55,7 +57,7 @@
               <div class="lb-screen">
                 <div class="lb-head">
                   <span class="trophy">🏆</span>
-                  <div class="lb-title"><b>Ranking ao Vivo</b><small>Live Leaderboard · P&amp;L em papel</small></div>
+                  <div class="lb-title"><b>Ranking ao Vivo</b><small>Animação · P&amp;L simulado</small></div>
                   <div class="lb-total"><b id="lbTotal">+0,00%</b><small id="lbTotalUsd">US$ 0</small></div>
                 </div>
                 <div class="lb-rows" id="lbRows"></div>
@@ -70,8 +72,14 @@
     </div>
 
     <aside class="side">
+      <div class="card paper-card" id="paperCard">
+        <div class="card-h"><span class="ico">💼</span><div><b>Conta de papel</b><small id="pcSub">paper trader · souza-algo</small></div><span class="src-tag real" title="Exportado do paper trader real (operações em papel, sem dinheiro real)">Dados reais</span></div>
+        <div id="pcBody"><p class="empty">Carregando dados da conta de papel…</p></div>
+        <div class="pc-foot"><span id="pcUpdated">—</span><a href="lab/">Abrir Laboratório →</a></div>
+      </div>
+
       <div class="card risk-card">
-        <div class="card-h"><span class="bot xs" style="--c:#f472b6"></span><div><b>Mesa de Risco</b><small>CRO · kill 4,5%</small></div><span class="pill" id="riskPill">OK</span></div>
+        <div class="card-h"><span class="bot xs" style="--c:#f472b6"></span><div><b>Mesa de Risco</b><small>CRO · kill 4,5%</small></div><span class="src-tag sim" title="Números gerados por animação">Simulado</span><span class="pill" id="riskPill" style="margin-left:6px">OK</span></div>
         <div class="meter" title="Uso do piso de perda diária (4,5%)"><div class="meter-fill" id="riskFill"></div><span class="meter-mark">piso −4,5%</span></div>
         <div class="stats3">
           <div><small>Drawdown do dia</small><b id="ddVal">0,00%</b></div>
@@ -82,7 +90,7 @@
       </div>
 
       <div class="card queue-card" id="aprovacoes">
-        <div class="card-h"><span class="ico">⏳</span><div><b>Fila de aprovação</b><small>O Executor só age depois de você</small></div><span class="pill" id="qPill">0</span></div>
+        <div class="card-h"><span class="ico">⏳</span><div><b>Fila de aprovação</b><small>O Executor só age depois de você · simulado</small></div><span class="pill" id="qPill">0</span></div>
         <div class="queue" id="queue"><p class="empty">Nenhuma proposta aguardando. O próximo ciclo do fluxo traz novas ideias.</p></div>
         <div class="positions">
           <div class="sub-h">Posições em papel · Executor</div>
@@ -120,7 +128,7 @@
 </main>
 
 <footer class="foot">
-  <p><b>Souza Trading Floor</b> · demonstração interativa. <b>Todos os dados são simulados</b> (passeio aleatório em JavaScript) e as operações são apenas em papel. Nenhuma corretora, chave de API ou dinheiro real está conectado. Não é recomendação de investimento.</p>
+  <p><b>Souza Trading Floor</b> · demonstração interativa. <b>O pregão, o ticker, o ranking, a Mesa de Risco e a fila são animação</b> (passeio aleatório em JavaScript). <b>Somente o card “Conta de papel” e a página Laboratório</b> mostram dados reais do paper trader — ainda assim, operações apenas em papel. Nenhuma corretora, chave de API ou dinheiro real está conectado. Não é recomendação de investimento.</p>
 </footer>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -140,5 +148,6 @@
 </aside>
 
 <script src="assets/app.js"></script>
+<script src="assets/papercard.js"></script>
 </body>
 </html>

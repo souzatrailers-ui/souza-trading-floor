@@ -1,9 +1,14 @@
 # Souza Trading Floor
 
-Pregão virtual (estilo jogo, isométrico) de agentes de IA de trading — **100% simulado, modo papel**.
+Pregão virtual (estilo jogo, isométrico) de agentes de IA de trading — **pregão simulado, modo papel**.
 
 - Mesas coloridas por agente: Notícias (News), Batedor (Scout), Gráfico (Chart), Cético (Skeptic), Risco (Risk desk · piso 4,5% / kill switch), Dimensionador (Sizer) e Executor (só após aprovação do dono).
 - Ranking ao vivo, ticker de preços, chat com cada agente, pipeline **Fluxo** (Dados → Analista → Notícias → Raciocínio → Relatório → Alerta → Painel) e fila de aprovação (Aprovar / Rejeitar).
 - Preços gerados por passeio aleatório em JavaScript. Nenhuma corretora, chave de API ou dinheiro real. Não é recomendação de investimento.
 
 HTML/CSS/JS puro, sem build: abra `index.html` ou sirva a pasta (`python3 -m http.server`).
+
+## Laboratório (dados reais de papel)
+- `lab/` — página **Laboratório**: ranking de estratégias, payoff × acerto, curvas de capital, mapa de calor, conta de papel, estratégias ligadas/desligadas, posições abertas, log de trades e eventos. `lab/painel.html` = painel clássico.
+- Card **Conta de papel** no Pregão (rotulado *Dados reais*); o restante do Pregão continua sendo animação (rotulado *Simulado*).
+- `data/lab.json` e `data/paper.json` são exportados automaticamente pelo paper trader `souza-algo` (commit só quando os dados mudam, no máx. 1×/hora). Operações apenas em papel — sem corretora, sem chaves, sem dinheiro real.
