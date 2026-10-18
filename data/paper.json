@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-18T01:34:00+00:00",
+ "last_run": "2026-10-18T06:19:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -21,10 +21,10 @@
    "name": "SW_BREAKOUT",
    "enabled": true,
    "tier": "observação",
-   "roll_exp": 0.308442,
+   "roll_exp": 0.308547,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-18T01:34:32.050329+00:00"
+   "updated": "2026-10-18T06:19:20.194968+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": -0.099248,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-18T01:34:31.766023+00:00"
+   "updated": "2026-10-18T06:19:19.886327+00:00"
   }
  ],
  "positions": [],
@@ -58,7 +58,7 @@
   ]
  ],
  "equity_last": [
-  "2026-10-18T01:34:00+00:00",
+  "2026-10-18T06:19:00+00:00",
   1000.0
  ],
  "approver": {
@@ -881,7 +881,7 @@
     "demo_ready": false,
     "demo_progress": "0/30",
     "filter_actions": {
-     "skip_btc": 4
+     "skip_btc": 9
     },
     "approver": {}
    },
@@ -1015,7 +1015,7 @@
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
    }
   ],
-  "activity": 4
+  "activity": 9
  },
- "generated_at": "2026-10-18T01:34:33+00:00"
+ "generated_at": "2026-10-18T06:19:21+00:00"
 }
