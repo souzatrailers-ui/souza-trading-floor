@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-18T21:10:00+00:00",
+ "last_run": "2026-10-18T23:20:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -24,16 +24,16 @@
    "roll_exp": 0.308547,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-18T21:10:55.340394+00:00"
+   "updated": "2026-10-18T23:20:57.753226+00:00"
   },
   {
    "name": "TR_DONCHIAN",
    "enabled": false,
    "tier": "observação",
-   "roll_exp": -0.097916,
+   "roll_exp": -0.151827,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-18T21:10:54.937628+00:00"
+   "updated": "2026-10-18T23:20:57.454381+00:00"
   }
  ],
  "positions": [],
@@ -58,7 +58,7 @@
   ]
  ],
  "equity_last": [
-  "2026-10-18T21:10:00+00:00",
+  "2026-10-18T23:20:00+00:00",
   1000.0
  ],
  "approver": {
@@ -923,7 +923,7 @@
     "equity": 1000.0,
     "open_positions": 0,
     "position": null,
-    "last_bar_ts": "2026-10-16 20:00:00+00:00",
+    "last_bar_ts": "2026-10-18 22:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "0/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -1017,5 +1017,5 @@
   ],
   "activity": 9
  },
- "generated_at": "2026-10-18T21:10:56+00:00"
+ "generated_at": "2026-10-18T23:20:59+00:00"
 }
