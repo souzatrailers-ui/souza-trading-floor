@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-20T06:21:00+00:00",
+ "last_run": "2026-10-20T10:56:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -24,7 +24,7 @@
    "roll_exp": 0.353628,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-20T06:21:56.033146+00:00"
+   "updated": "2026-10-20T10:56:31.600274+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": -0.152146,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-20T06:21:55.737367+00:00"
+   "updated": "2026-10-20T10:56:31.293919+00:00"
   }
  ],
  "positions": [],
@@ -58,7 +58,7 @@
   ]
  ],
  "equity_last": [
-  "2026-10-20T06:21:00+00:00",
+  "2026-10-20T10:56:00+00:00",
   1000.0
  ],
  "approver": {
@@ -929,10 +929,10 @@
      "side": "SHORT",
      "entry_ts": "2026-10-20 00:00:00+00:00",
      "entry": 4130.53715,
-     "stop": 4157.98051,
+     "stop": 4150.283795,
      "qty": 0.250535
     },
-    "last_bar_ts": "2026-10-20 05:00:00+00:00",
+    "last_bar_ts": "2026-10-20 09:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "0/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -1026,5 +1026,5 @@
   ],
   "activity": 15
  },
- "generated_at": "2026-10-20T06:21:57+00:00"
+ "generated_at": "2026-10-20T10:56:33+00:00"
 }
