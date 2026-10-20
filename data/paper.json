@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-20T15:05:00+00:00",
+ "last_run": "2026-10-20T17:35:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -24,7 +24,7 @@
    "roll_exp": 0.353628,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-20T15:05:50.904002+00:00"
+   "updated": "2026-10-20T17:35:09.379031+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": -0.152146,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-20T15:05:50.603831+00:00"
+   "updated": "2026-10-20T17:35:09.018187+00:00"
   }
  ],
  "positions": [],
@@ -58,7 +58,7 @@
   ]
  ],
  "equity_last": [
-  "2026-10-20T15:05:00+00:00",
+  "2026-10-20T17:35:00+00:00",
   1000.0
  ],
  "approver": {
@@ -87,9 +87,30 @@
  "lessons": {
   "schema": "brain.lesson.v1",
   "window_days": 7,
-  "paper_total": 0,
+  "paper_total": 1,
   "shadow_total": 0,
-  "weekly": [],
+  "weekly": [
+   {
+    "lesson_code": "py.learn.lesson.no_chase",
+    "strategy": "TF_CLENOW_XAUUSD_H1",
+    "side": null,
+    "count": 1,
+    "avg_R": -0.494,
+    "win_rate": 0.0,
+    "top_symbols": [
+     "XAUUSD"
+    ],
+    "lesson_pt": "Não perseguir preço esticado (> 2 ATR da EMA50) em TF_CLENOW_XAUUSD_H1",
+    "lesson_en": "Don't chase an extended price (> 2 ATR from the EMA50) in TF_CLENOW_XAUUSD_H1",
+    "code": {
+     "key": "py.learn.lesson.no_chase",
+     "params": {
+      "strategy": "TF_CLENOW_XAUUSD_H1",
+      "side": "SHORT"
+     }
+    }
+   }
+  ],
   "weekly_shadow": [],
   "backtest_prior": {
    "total": 15634,
@@ -808,16 +829,16 @@
    {
     "name": "TF_CLENOW_XAUUSD_H1",
     "account": "clenow-paper",
-    "trades": 0,
+    "trades": 1,
     "wins": 0,
-    "win_rate": null,
-    "net_R": 0,
-    "avg_R": null,
-    "pnl": 0,
-    "equity": 1000.0,
-    "open_positions": 1,
+    "win_rate": 0.0,
+    "net_R": -0.494,
+    "avg_R": -0.494,
+    "pnl": -4.94,
+    "equity": 995.06,
+    "open_positions": 0,
     "demo_ready": false,
-    "demo_progress": "0/30"
+    "demo_progress": "1/30"
    },
    {
     "name": "TF_CLENOW_XAUUSD_D1",
@@ -917,24 +938,18 @@
     },
     "costs": "0.205 pts/side (USD/oz)",
     "data_source": "MT5 Vantage seed + Yahoo GCZ26.CMX 1h × k=0.99500 (futures scaled to Vantage level)",
-    "trades": 0,
+    "trades": 1,
     "wins": 0,
-    "win_rate": null,
-    "net_R": 0,
-    "avg_R": null,
-    "pnl": 0,
-    "equity": 1000.0,
-    "open_positions": 1,
-    "position": {
-     "side": "SHORT",
-     "entry_ts": "2026-10-20 00:00:00+00:00",
-     "entry": 4130.53715,
-     "stop": 4150.049805,
-     "qty": 0.250535
-    },
-    "last_bar_ts": "2026-10-20 13:00:00+00:00",
+    "win_rate": 0.0,
+    "net_R": -0.494,
+    "avg_R": -0.494,
+    "pnl": -4.94,
+    "equity": 995.06,
+    "open_positions": 0,
+    "position": null,
+    "last_bar_ts": "2026-10-20 16:00:00+00:00",
     "demo_ready": false,
-    "demo_progress": "0/30",
+    "demo_progress": "1/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
    },
    {
@@ -1026,5 +1041,5 @@
   ],
   "activity": 15
  },
- "generated_at": "2026-10-20T15:05:52+00:00"
+ "generated_at": "2026-10-20T17:35:11+00:00"
 }
