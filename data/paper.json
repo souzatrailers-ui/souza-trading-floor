@@ -1039,7 +1039,186 @@
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
    }
   ],
-  "activity": 15
+  "activity": 15,
+  "accounts": [
+   {
+    "account": "ab-filtered",
+    "db": "paper_ab.db",
+    "currency": "USD",
+    "start_balance": 1000.0,
+    "balance": 1000.0,
+    "equity": 1000.0,
+    "realised_pnl": 0,
+    "open_risk_usd": 10.0,
+    "open_positions": 1,
+    "trades_closed": 0,
+    "as_of": "2026-10-21T00:15:00+00:00",
+    "by_strategy": [
+     {
+      "strategy": "SW_PULLBACK+F",
+      "trades_closed": 0,
+      "realised_pnl": 0.0,
+      "open_positions": 1,
+      "open_risk_usd": 10.0
+     }
+    ]
+   },
+   {
+    "account": "clenow-paper",
+    "db": "paper_clenow.db",
+    "currency": "USD",
+    "start_balance": 1000.0,
+    "balance": 995.060035,
+    "equity": 995.060035,
+    "realised_pnl": -4.939965,
+    "open_risk_usd": 0,
+    "open_positions": 0,
+    "trades_closed": 1,
+    "as_of": "2026-10-21T00:15:00+00:00",
+    "by_strategy": [
+     {
+      "strategy": "TF_CLENOW_XAUUSD_H1",
+      "trades_closed": 1,
+      "realised_pnl": -4.939965,
+      "open_positions": 0,
+      "open_risk_usd": 0.0
+     }
+    ]
+   }
+  ]
  },
- "generated_at": "2026-10-21T00:15:57+00:00"
+ "schema_version": 2,
+ "accounts": [
+  {
+   "account": "main",
+   "db": "paper.db",
+   "currency": "USD",
+   "start_balance": 1000.0,
+   "balance": 1000.0,
+   "equity": 1000.0,
+   "realised_pnl": 0,
+   "open_risk_usd": 0,
+   "open_positions": 0,
+   "trades_closed": 0,
+   "as_of": "2026-10-21T00:15:00+00:00",
+   "by_strategy": []
+  },
+  {
+   "account": "ab-filtered",
+   "db": "paper_ab.db",
+   "currency": "USD",
+   "start_balance": 1000.0,
+   "balance": 1000.0,
+   "equity": 1000.0,
+   "realised_pnl": 0,
+   "open_risk_usd": 10.0,
+   "open_positions": 1,
+   "trades_closed": 0,
+   "as_of": "2026-10-21T00:15:00+00:00",
+   "by_strategy": [
+    {
+     "strategy": "SW_PULLBACK+F",
+     "trades_closed": 0,
+     "realised_pnl": 0.0,
+     "open_positions": 1,
+     "open_risk_usd": 10.0
+    }
+   ]
+  },
+  {
+   "account": "clenow-paper",
+   "db": "paper_clenow.db",
+   "currency": "USD",
+   "start_balance": 1000.0,
+   "balance": 995.060035,
+   "equity": 995.060035,
+   "realised_pnl": -4.939965,
+   "open_risk_usd": 0,
+   "open_positions": 0,
+   "trades_closed": 1,
+   "as_of": "2026-10-21T00:15:00+00:00",
+   "by_strategy": [
+    {
+     "strategy": "TF_CLENOW_XAUUSD_H1",
+     "trades_closed": 1,
+     "realised_pnl": -4.939965,
+     "open_positions": 0,
+     "open_risk_usd": 0.0
+    }
+   ]
+  }
+ ],
+ "monthly_returns": {
+  "main": [
+   {
+    "month": "2026-10",
+    "return_pct": 0.0,
+    "pnl_usd": 0.0,
+    "trades": 0
+   }
+  ],
+  "ab-filtered": [
+   {
+    "month": "2026-10",
+    "return_pct": 0.0,
+    "pnl_usd": 0.0,
+    "trades": 0
+   }
+  ],
+  "clenow-paper": [
+   {
+    "month": "2026-10",
+    "return_pct": -0.493996,
+    "pnl_usd": -4.939965,
+    "trades": 1
+   }
+  ]
+ },
+ "all_trades": [
+  {
+   "id": "clenow-paper:1",
+   "account": "clenow-paper",
+   "status": "closed",
+   "strategy": "TF_CLENOW_XAUUSD_H1",
+   "symbol": "XAUUSD",
+   "tf": "1h",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-10-20T00:00:00+00:00",
+   "closed_at": "2026-10-20T14:00:00+00:00",
+   "entry": 4130.53715,
+   "stop": 4170.451716,
+   "stop_derived": true,
+   "exit": 4150.254805,
+   "qty": 0.250535,
+   "risk_usd": 10.0,
+   "R": -0.493996,
+   "pnl_usd": -4.939965,
+   "fees_usd": 0.102719,
+   "reason": "stop"
+  },
+  {
+   "id": "ab-filtered:open:1",
+   "account": "ab-filtered",
+   "status": "open",
+   "strategy": "SW_PULLBACK+F",
+   "symbol": "ETCUSDT",
+   "tf": "1d",
+   "side": "COMPRA",
+   "dir": 1,
+   "opened_at": "2026-10-19T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 7.753875,
+   "stop": 6.828541,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 10.806907,
+   "risk_usd": 10.0,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  }
+ ],
+ "generated_at": "2026-10-21T00:30:36+00:00"
 }
