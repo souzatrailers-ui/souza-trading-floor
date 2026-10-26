@@ -2,7 +2,7 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-10-26T17:50:00+00:00",
+ "last_run": "2026-10-26T19:30:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
@@ -24,7 +24,7 @@
    "roll_exp": 0.357208,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-26T17:50:15.105700+00:00"
+   "updated": "2026-10-26T19:30:56.564570+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": -0.112058,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-10-26T17:50:14.891751+00:00"
+   "updated": "2026-10-26T19:30:56.321681+00:00"
   }
  ],
  "positions": [],
@@ -58,7 +58,7 @@
   ]
  ],
  "equity_last": [
-  "2026-10-26T17:50:00+00:00",
+  "2026-10-26T19:30:00+00:00",
   1000.0
  ],
  "approver": {
@@ -87,15 +87,15 @@
  "lessons": {
   "schema": "brain.lesson.v1",
   "window_days": 7,
-  "paper_total": 2,
+  "paper_total": 3,
   "shadow_total": 0,
   "weekly": [
    {
     "lesson_code": "py.learn.lesson.no_chase",
     "strategy": "TF_CLENOW_XAUUSD_H1",
     "side": null,
-    "count": 1,
-    "avg_R": -0.494,
+    "count": 2,
+    "avg_R": -0.749,
     "win_rate": 0.0,
     "top_symbols": [
      "XAUUSD"
@@ -849,16 +849,16 @@
    {
     "name": "TF_CLENOW_XAUUSD_H1",
     "account": "clenow-paper",
-    "trades": 2,
+    "trades": 3,
     "wins": 1,
-    "win_rate": 50.0,
-    "net_R": 1.506,
-    "avg_R": 0.753,
-    "pnl": 15.06,
-    "equity": 1015.06,
-    "open_positions": 1,
+    "win_rate": 33.3,
+    "net_R": 0.501,
+    "avg_R": 0.167,
+    "pnl": 5.01,
+    "equity": 1005.01,
+    "open_positions": 0,
     "demo_ready": false,
-    "demo_progress": "2/30"
+    "demo_progress": "3/30"
    },
    {
     "name": "TF_CLENOW_XAUUSD_D1",
@@ -958,24 +958,18 @@
     },
     "costs": "0.205 pts/side (USD/oz)",
     "data_source": "MT5 Vantage seed + Yahoo GCZ26.CMX 1h × k=0.99500 (futures scaled to Vantage level)",
-    "trades": 2,
+    "trades": 3,
     "wins": 1,
-    "win_rate": 50.0,
-    "net_R": 1.506,
-    "avg_R": 0.753,
-    "pnl": 15.06,
-    "equity": 1015.06,
-    "open_positions": 1,
-    "position": {
-     "side": "SHORT",
-     "entry_ts": "2026-10-26 01:00:00+00:00",
-     "entry": 3978.70006,
-     "stop": 4021.873645,
-     "qty": 0.231623
-    },
-    "last_bar_ts": "2026-10-26 16:00:00+00:00",
+    "win_rate": 33.3,
+    "net_R": 0.501,
+    "avg_R": 0.167,
+    "pnl": 5.01,
+    "equity": 1005.01,
+    "open_positions": 0,
+    "position": null,
+    "last_bar_ts": "2026-10-26 18:00:00+00:00",
     "demo_ready": false,
-    "demo_progress": "2/30",
+    "demo_progress": "3/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
    },
    {
@@ -1084,7 +1078,7 @@
     "open_risk_usd": 10.0,
     "open_positions": 1,
     "trades_closed": 0,
-    "as_of": "2026-10-26T17:50:00+00:00",
+    "as_of": "2026-10-26T19:30:00+00:00",
     "by_strategy": [
      {
       "strategy": "SW_PULLBACK+F",
@@ -1100,13 +1094,13 @@
     "db": "paper_clenow.db",
     "currency": "USD",
     "start_balance": 1000.0,
-    "balance": 1015.056686,
-    "equity": 1015.056686,
-    "realised_pnl": 15.056686,
-    "open_risk_usd": 20.0,
-    "open_positions": 2,
-    "trades_closed": 2,
-    "as_of": "2026-10-26T17:50:00+00:00",
+    "balance": 1005.009204,
+    "equity": 1005.009204,
+    "realised_pnl": 5.009204,
+    "open_risk_usd": 10.0,
+    "open_positions": 1,
+    "trades_closed": 3,
+    "as_of": "2026-10-26T19:30:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -1117,10 +1111,10 @@
      },
      {
       "strategy": "TF_CLENOW_XAUUSD_H1",
-      "trades_closed": 2,
-      "realised_pnl": 15.056686,
-      "open_positions": 1,
-      "open_risk_usd": 10.0
+      "trades_closed": 3,
+      "realised_pnl": 5.009204,
+      "open_positions": 0,
+      "open_risk_usd": 0.0
      }
     ]
    }
@@ -1139,7 +1133,7 @@
    "open_risk_usd": 0,
    "open_positions": 0,
    "trades_closed": 0,
-   "as_of": "2026-10-26T17:50:00+00:00",
+   "as_of": "2026-10-26T19:30:00+00:00",
    "by_strategy": []
   },
   {
@@ -1153,7 +1147,7 @@
    "open_risk_usd": 10.0,
    "open_positions": 1,
    "trades_closed": 0,
-   "as_of": "2026-10-26T17:50:00+00:00",
+   "as_of": "2026-10-26T19:30:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_PULLBACK+F",
@@ -1169,13 +1163,13 @@
    "db": "paper_clenow.db",
    "currency": "USD",
    "start_balance": 1000.0,
-   "balance": 1015.056686,
-   "equity": 1015.056686,
-   "realised_pnl": 15.056686,
-   "open_risk_usd": 20.0,
-   "open_positions": 2,
-   "trades_closed": 2,
-   "as_of": "2026-10-26T17:50:00+00:00",
+   "balance": 1005.009204,
+   "equity": 1005.009204,
+   "realised_pnl": 5.009204,
+   "open_risk_usd": 10.0,
+   "open_positions": 1,
+   "trades_closed": 3,
+   "as_of": "2026-10-26T19:30:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -1186,10 +1180,10 @@
     },
     {
      "strategy": "TF_CLENOW_XAUUSD_H1",
-     "trades_closed": 2,
-     "realised_pnl": 15.056686,
-     "open_positions": 1,
-     "open_risk_usd": 10.0
+     "trades_closed": 3,
+     "realised_pnl": 5.009204,
+     "open_positions": 0,
+     "open_risk_usd": 0.0
     }
    ]
   }
@@ -1214,34 +1208,34 @@
   "clenow-paper": [
    {
     "month": "2026-10",
-    "return_pct": 1.505669,
-    "pnl_usd": 15.056686,
-    "trades": 2
+    "return_pct": 0.50092,
+    "pnl_usd": 5.009204,
+    "trades": 3
    }
   ]
  },
  "all_trades": [
   {
-   "id": "clenow-paper:open:1",
+   "id": "clenow-paper:3",
    "account": "clenow-paper",
-   "status": "open",
+   "status": "closed",
    "strategy": "TF_CLENOW_XAUUSD_H1",
    "symbol": "XAUUSD",
    "tf": "1h",
    "side": "VENDA",
    "dir": -1,
    "opened_at": "2026-10-26T01:00:00+00:00",
-   "closed_at": null,
+   "closed_at": "2026-10-26T17:00:00+00:00",
    "entry": 3978.70006,
    "stop": 4021.873645,
-   "stop_derived": false,
-   "exit": null,
+   "stop_derived": true,
+   "exit": 4022.078645,
    "qty": 0.231623,
    "risk_usd": 10.0,
-   "R": null,
-   "pnl_usd": null,
-   "fees_usd": null,
-   "reason": null
+   "R": -1.004748,
+   "pnl_usd": -10.047483,
+   "fees_usd": 0.094965,
+   "reason": "stop"
   },
   {
    "id": "clenow-paper:2",
@@ -1332,5 +1326,5 @@
    "reason": null
   }
  ],
- "generated_at": "2026-10-26T18:16:59+00:00"
+ "generated_at": "2026-10-26T19:30:57+00:00"
 }
