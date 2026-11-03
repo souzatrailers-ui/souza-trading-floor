@@ -2,19 +2,19 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-11-02T23:01:00+00:00",
+ "last_run": "2026-11-03T00:13:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
   "balance": 1000.0,
-  "equity": 1000.0,
-  "unrealized_pnl": 0.0,
-  "pnl": 0.0,
-  "pnl_pct": 0.0,
+  "equity": 999.96304,
+  "unrealized_pnl": -0.03696,
+  "pnl": -0.03696,
+  "pnl_pct": -0.003696,
   "trades_closed": 0,
   "wins": 0,
   "win_rate": null,
-  "open_positions": 0
+  "open_positions": 3
  },
  "strategies": [
   {
@@ -24,7 +24,7 @@
    "roll_exp": 0.221768,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-02T23:01:37.494976+00:00"
+   "updated": "2026-11-03T00:13:46.630090+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,13 +33,113 @@
    "roll_exp": -0.609309,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-02T23:01:37.165903+00:00"
+   "updated": "2026-11-03T00:13:46.416139+00:00"
   }
  ],
- "positions": [],
+ "positions": [
+  {
+   "strategy": "SW_BREAKOUT",
+   "symbol": "SOLUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "qty": 0.383677,
+   "entry_price": 91.93401,
+   "stop": 104.965806,
+   "target": 52.838621,
+   "risk_usd": 5.0,
+   "last_price": 91.98,
+   "price_ts": "2026-11-02T23:00:00+00:00",
+   "unrealized_pnl": -0.017645,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "max_exit_at": "2026-12-02T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 91.93401,
+   "exit": null,
+   "R": null,
+   "pnl_usd": null,
+   "account": "main"
+  },
+  {
+   "strategy": "SW_BREAKOUT",
+   "symbol": "NEARUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "qty": 3.598624,
+   "entry_price": 3.865067,
+   "stop": 5.254487,
+   "target": -0.303194,
+   "risk_usd": 5.0,
+   "last_price": 3.867,
+   "price_ts": "2026-11-02T23:00:00+00:00",
+   "unrealized_pnl": -0.006958,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "max_exit_at": "2026-12-02T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 3.865067,
+   "exit": null,
+   "R": null,
+   "pnl_usd": null,
+   "account": "main"
+  },
+  {
+   "strategy": "SW_BREAKOUT",
+   "symbol": "ATOMUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "qty": 17.257486,
+   "entry_price": 1.431284,
+   "stop": 1.721013,
+   "target": 0.562096,
+   "risk_usd": 5.0,
+   "last_price": 1.432,
+   "price_ts": "2026-11-02T23:00:00+00:00",
+   "unrealized_pnl": -0.012356,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "max_exit_at": "2026-12-02T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 1.431284,
+   "exit": null,
+   "R": null,
+   "pnl_usd": null,
+   "account": "main"
+  }
+ ],
  "trades": [],
  "trades_total": 0,
  "events": [
+  {
+   "ts": "2026-11-03T00:13:47.193545+00:00",
+   "kind": "ABRIU",
+   "msg": "[observação] SW_BREAKOUT ATOMUSDT SHORT @ 1.43128 stop 1.72101 alvo 0.562096 risco $5.00 (PAPEL)"
+  },
+  {
+   "ts": "2026-11-03T00:13:47.193408+00:00",
+   "kind": "APROVADOR",
+   "msg": "APROVOU SW_BREAKOUT ATOMUSDT SHORT · score 94 · tamanho ×0.5 — score 94 ≥ limite 60; Risco folga 3,00% (15/15); R:R 1:3,0 (15/15)"
+  },
+  {
+   "ts": "2026-11-03T00:13:47.170105+00:00",
+   "kind": "ABRIU",
+   "msg": "[observação] SW_BREAKOUT NEARUSDT SHORT @ 3.86507 stop 5.25449 alvo -0.303194 risco $5.00 (PAPEL)"
+  },
+  {
+   "ts": "2026-11-03T00:13:47.169937+00:00",
+   "kind": "APROVADOR",
+   "msg": "APROVOU SW_BREAKOUT NEARUSDT SHORT · score 86 · tamanho ×0.5 — score 86 ≥ limite 60; Risco folga 3,50% (15/15); R:R 1:3,0 (15/15)"
+  },
+  {
+   "ts": "2026-11-03T00:13:47.113887+00:00",
+   "kind": "ABRIU",
+   "msg": "[observação] SW_BREAKOUT SOLUSDT SHORT @ 91.934 stop 104.966 alvo 52.8386 risco $5.00 (PAPEL)"
+  },
+  {
+   "ts": "2026-11-03T00:13:47.113529+00:00",
+   "kind": "APROVADOR",
+   "msg": "APROVOU SW_BREAKOUT SOLUSDT SHORT · score 96 · tamanho ×0.5 — score 96 ≥ limite 60; Risco folga 4,00% (15/15); R:R 1:3,0 (15/15)"
+  },
   {
    "ts": "2026-10-17T04:03:23.652822+00:00",
    "kind": "ESTRATÉGIA",
@@ -58,7 +158,7 @@
   ]
  ],
  "equity_last": [
-  "2026-11-02T23:01:00+00:00",
+  "2026-11-03T00:13:00+00:00",
   1000.0
  ],
  "approver": {
@@ -80,9 +180,67 @@
    "Notícias"
   ],
   "kill_switch": false,
-  "approved": 0,
+  "approved": 3,
   "rejected": 0,
-  "decisions": []
+  "decisions": [
+   {
+    "ts": "2026-11-03T00:13:47.193315+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "ATOMUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-02T00:00:00+00:00",
+    "score": 94,
+    "decision": "APROVADO",
+    "size_mult": 0.5,
+    "reasons": [
+     "score 94 ≥ limite 60",
+     "Risco folga 3,00% (15/15)",
+     "R:R 1:3,0 (15/15)",
+     "Gráfico a favor (15/15)",
+     "tamanho ×0,5 (observação)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-03T00:13:47.169831+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "NEARUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-02T00:00:00+00:00",
+    "score": 86,
+    "decision": "APROVADO",
+    "size_mult": 0.5,
+    "reasons": [
+     "score 86 ≥ limite 60",
+     "Risco folga 3,50% (15/15)",
+     "R:R 1:3,0 (15/15)",
+     "Exposição 0 correlac. (10/10)",
+     "tamanho ×0,5 (observação)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-03T00:13:47.113302+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "SOLUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-02T00:00:00+00:00",
+    "score": 96,
+    "decision": "APROVADO",
+    "size_mult": 0.5,
+    "reasons": [
+     "score 96 ≥ limite 60",
+     "Risco folga 4,00% (15/15)",
+     "R:R 1:3,0 (15/15)",
+     "Gráfico a favor (15/15)",
+     "tamanho ×0,5 (observação)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Não perseguir preço esticado (> 2 ATR da EMA50) em SW_BREAKOUT"
+    ]
+   }
+  ]
  },
  "lessons": {
   "schema": "brain.lesson.v1",
@@ -716,7 +874,7 @@
      "avg_R": null,
      "pnl": 0,
      "equity": 1000.0,
-     "open_positions": 0,
+     "open_positions": 3,
      "demo_ready": false,
      "demo_progress": "0/30"
     },
@@ -730,11 +888,16 @@
      "avg_R": null,
      "pnl": 0,
      "equity": 1000.0,
-     "open_positions": 0,
+     "open_positions": 3,
      "demo_ready": false,
      "demo_progress": "0/30",
-     "filter_actions": {},
-     "approver": {}
+     "filter_actions": {
+      "full": 2,
+      "half_vol": 1
+     },
+     "approver": {
+      "APROVADO": 3
+     }
     },
     "delta_net_R": 0
    },
@@ -1065,7 +1228,7 @@
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
    }
   ],
-  "activity": 42,
+  "activity": 48,
   "accounts": [
    {
     "account": "ab-filtered",
@@ -1075,11 +1238,18 @@
     "balance": 998.022227,
     "equity": 998.022227,
     "realised_pnl": -1.977773,
-    "open_risk_usd": 0,
-    "open_positions": 0,
+    "open_risk_usd": 12.475278,
+    "open_positions": 3,
     "trades_closed": 1,
-    "as_of": "2026-11-02T23:01:00+00:00",
+    "as_of": "2026-11-03T00:13:00+00:00",
     "by_strategy": [
+     {
+      "strategy": "SW_BREAKOUT+F",
+      "trades_closed": 0,
+      "realised_pnl": 0.0,
+      "open_positions": 3,
+      "open_risk_usd": 12.475278
+     },
      {
       "strategy": "SW_PULLBACK+F",
       "trades_closed": 1,
@@ -1100,7 +1270,7 @@
     "open_risk_usd": 10.0,
     "open_positions": 1,
     "trades_closed": 4,
-    "as_of": "2026-11-02T23:01:00+00:00",
+    "as_of": "2026-11-03T00:13:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -1130,11 +1300,19 @@
    "balance": 1000.0,
    "equity": 1000.0,
    "realised_pnl": 0,
-   "open_risk_usd": 0,
-   "open_positions": 0,
+   "open_risk_usd": 15.0,
+   "open_positions": 3,
    "trades_closed": 0,
-   "as_of": "2026-11-02T23:01:00+00:00",
-   "by_strategy": []
+   "as_of": "2026-11-03T00:13:00+00:00",
+   "by_strategy": [
+    {
+     "strategy": "SW_BREAKOUT",
+     "trades_closed": 0,
+     "realised_pnl": 0.0,
+     "open_positions": 3,
+     "open_risk_usd": 15.0
+    }
+   ]
   },
   {
    "account": "ab-filtered",
@@ -1144,11 +1322,18 @@
    "balance": 998.022227,
    "equity": 998.022227,
    "realised_pnl": -1.977773,
-   "open_risk_usd": 0,
-   "open_positions": 0,
+   "open_risk_usd": 12.475278,
+   "open_positions": 3,
    "trades_closed": 1,
-   "as_of": "2026-11-02T23:01:00+00:00",
+   "as_of": "2026-11-03T00:13:00+00:00",
    "by_strategy": [
+    {
+     "strategy": "SW_BREAKOUT+F",
+     "trades_closed": 0,
+     "realised_pnl": 0.0,
+     "open_positions": 3,
+     "open_risk_usd": 12.475278
+    },
     {
      "strategy": "SW_PULLBACK+F",
      "trades_closed": 1,
@@ -1169,7 +1354,7 @@
    "open_risk_usd": 10.0,
    "open_positions": 1,
    "trades_closed": 4,
-   "as_of": "2026-11-02T23:01:00+00:00",
+   "as_of": "2026-11-03T00:13:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -1233,6 +1418,138 @@
   ]
  },
  "all_trades": [
+  {
+   "id": "main:open:1",
+   "account": "main",
+   "status": "open",
+   "strategy": "SW_BREAKOUT",
+   "symbol": "SOLUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 91.93401,
+   "stop": 104.965806,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 0.383677,
+   "risk_usd": 5.0,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
+  {
+   "id": "main:open:2",
+   "account": "main",
+   "status": "open",
+   "strategy": "SW_BREAKOUT",
+   "symbol": "NEARUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 3.865067,
+   "stop": 5.254487,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 3.598624,
+   "risk_usd": 5.0,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
+  {
+   "id": "main:open:3",
+   "account": "main",
+   "status": "open",
+   "strategy": "SW_BREAKOUT",
+   "symbol": "ATOMUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 1.431284,
+   "stop": 1.721013,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 17.257486,
+   "risk_usd": 5.0,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
+  {
+   "id": "ab-filtered:open:1",
+   "account": "ab-filtered",
+   "status": "open",
+   "strategy": "SW_BREAKOUT+F",
+   "symbol": "SOLUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 91.93401,
+   "stop": 104.965806,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 0.382918,
+   "risk_usd": 4.990111,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
+  {
+   "id": "ab-filtered:open:2",
+   "account": "ab-filtered",
+   "status": "open",
+   "strategy": "SW_BREAKOUT+F",
+   "symbol": "NEARUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 3.865067,
+   "stop": 5.254487,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 1.795753,
+   "risk_usd": 2.495056,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
+  {
+   "id": "ab-filtered:open:3",
+   "account": "ab-filtered",
+   "status": "open",
+   "strategy": "SW_BREAKOUT+F",
+   "symbol": "ATOMUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-03T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 1.431284,
+   "stop": 1.721013,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 17.223354,
+   "risk_usd": 4.990111,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
   {
    "id": "clenow-paper:4",
    "account": "clenow-paper",
@@ -1366,5 +1683,5 @@
    "reason": "stop"
   }
  ],
- "generated_at": "2026-11-02T23:01:39+00:00"
+ "generated_at": "2026-11-03T00:13:48+00:00"
 }
