@@ -2,15 +2,15 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-11-05T22:02:00+00:00",
+ "last_run": "2026-11-05T23:06:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
   "balance": 1000.0,
-  "equity": 1002.008979,
-  "unrealized_pnl": 2.008979,
-  "pnl": 2.008979,
-  "pnl_pct": 0.200898,
+  "equity": 1002.619596,
+  "unrealized_pnl": 2.619596,
+  "pnl": 2.619596,
+  "pnl_pct": 0.26196,
   "trades_closed": 0,
   "wins": 0,
   "win_rate": null,
@@ -24,16 +24,16 @@
    "roll_exp": 0.221768,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-05T22:02:16.035196+00:00"
+   "updated": "2026-11-05T23:06:59.099101+00:00"
   },
   {
    "name": "TR_DONCHIAN",
    "enabled": false,
    "tier": "observação",
-   "roll_exp": -0.757156,
+   "roll_exp": -0.592486,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-05T22:02:15.810147+00:00"
+   "updated": "2026-11-05T23:06:58.858950+00:00"
   }
  ],
  "positions": [
@@ -48,9 +48,9 @@
    "stop": 104.965806,
    "target": 52.838621,
    "risk_usd": 5.0,
-   "last_price": 89.97,
-   "price_ts": "2026-11-05T21:00:00+00:00",
-   "unrealized_pnl": 0.753545,
+   "last_price": 89.61,
+   "price_ts": "2026-11-05T22:00:00+00:00",
+   "unrealized_pnl": 0.891669,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -71,9 +71,9 @@
    "stop": 5.254487,
    "target": -0.303194,
    "risk_usd": 5.0,
-   "last_price": 3.695,
-   "price_ts": "2026-11-05T21:00:00+00:00",
-   "unrealized_pnl": 0.612005,
+   "last_price": 3.674,
+   "price_ts": "2026-11-05T22:00:00+00:00",
+   "unrealized_pnl": 0.687576,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -94,9 +94,9 @@
    "stop": 1.721013,
    "target": 0.562096,
    "risk_usd": 5.0,
-   "last_price": 1.394,
-   "price_ts": "2026-11-05T21:00:00+00:00",
-   "unrealized_pnl": 0.643428,
+   "last_price": 1.371,
+   "price_ts": "2026-11-05T22:00:00+00:00",
+   "unrealized_pnl": 1.04035,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -158,7 +158,7 @@
   ]
  ],
  "equity_last": [
-  "2026-11-05T22:02:00+00:00",
+  "2026-11-05T23:06:00+00:00",
   1000.0
  ],
  "approver": {
@@ -1110,7 +1110,7 @@
     "equity": 1031.4,
     "open_positions": 0,
     "position": null,
-    "last_bar_ts": "2026-11-05 20:00:00+00:00",
+    "last_bar_ts": "2026-11-05 21:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "5/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -1159,7 +1159,7 @@
      "stop": 4175.099757,
      "qty": 0.033278
     },
-    "last_bar_ts": "2026-11-04 00:00:00+00:00",
+    "last_bar_ts": "2026-11-05 00:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "0/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -1202,7 +1202,7 @@
     "equity": 1000.0,
     "open_positions": 0,
     "position": null,
-    "last_bar_ts": "2026-11-04 00:00:00+00:00",
+    "last_bar_ts": "2026-11-05 00:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "0/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -1221,7 +1221,7 @@
     "open_risk_usd": 12.475278,
     "open_positions": 3,
     "trades_closed": 1,
-    "as_of": "2026-11-05T22:02:00+00:00",
+    "as_of": "2026-11-05T23:06:00+00:00",
     "by_strategy": [
      {
       "strategy": "SW_BREAKOUT+F",
@@ -1250,7 +1250,7 @@
     "open_risk_usd": 10.0,
     "open_positions": 1,
     "trades_closed": 5,
-    "as_of": "2026-11-05T22:02:00+00:00",
+    "as_of": "2026-11-05T23:06:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -1283,7 +1283,7 @@
    "open_risk_usd": 15.0,
    "open_positions": 3,
    "trades_closed": 0,
-   "as_of": "2026-11-05T22:02:00+00:00",
+   "as_of": "2026-11-05T23:06:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT",
@@ -1305,7 +1305,7 @@
    "open_risk_usd": 12.475278,
    "open_positions": 3,
    "trades_closed": 1,
-   "as_of": "2026-11-05T22:02:00+00:00",
+   "as_of": "2026-11-05T23:06:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT+F",
@@ -1334,7 +1334,7 @@
    "open_risk_usd": 10.0,
    "open_positions": 1,
    "trades_closed": 5,
-   "as_of": "2026-11-05T22:02:00+00:00",
+   "as_of": "2026-11-05T23:06:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -1685,5 +1685,5 @@
    "reason": "stop"
   }
  ],
- "generated_at": "2026-11-05T22:02:17+00:00"
+ "generated_at": "2026-11-05T23:07:00+00:00"
 }
