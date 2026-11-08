@@ -2,15 +2,15 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-11-08T22:15:00+00:00",
+ "last_run": "2026-11-08T23:31:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
   "balance": 1000.0,
-  "equity": 1009.049924,
-  "unrealized_pnl": 9.049924,
-  "pnl": 9.049924,
-  "pnl_pct": 0.904992,
+  "equity": 1004.167342,
+  "unrealized_pnl": 4.167342,
+  "pnl": 4.167342,
+  "pnl_pct": 0.416734,
   "trades_closed": 0,
   "wins": 0,
   "win_rate": null,
@@ -24,7 +24,7 @@
    "roll_exp": 0.221768,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-08T22:15:55.821631+00:00"
+   "updated": "2026-11-08T23:31:18.103775+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": 0.08098,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-08T22:15:55.580369+00:00"
+   "updated": "2026-11-08T23:31:17.865285+00:00"
   }
  ],
  "positions": [
@@ -48,9 +48,9 @@
    "stop": 689.402592,
    "target": 642.488734,
    "risk_usd": 3.449448,
-   "last_price": 680.36,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": -0.125063,
+   "last_price": 683.94,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": -1.441201,
    "opened_at": "2026-11-08T22:00:00+00:00",
    "max_exit_at": "2026-11-28T21:00:00+00:00",
    "closed_at": null,
@@ -71,9 +71,9 @@
    "stop": 0.88234,
    "target": 0.743504,
    "risk_usd": 5.0,
-   "last_price": 0.855,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": -0.076979,
+   "last_price": 0.864,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": -1.697595,
    "opened_at": "2026-11-08T22:00:00+00:00",
    "max_exit_at": "2026-11-28T21:00:00+00:00",
    "closed_at": null,
@@ -94,9 +94,9 @@
    "stop": 0.763357,
    "target": 0.614738,
    "risk_usd": 5.0,
-   "last_price": 0.734,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": -0.061735,
+   "last_price": 0.7395,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": -0.986922,
    "opened_at": "2026-11-08T22:00:00+00:00",
    "max_exit_at": "2026-11-28T21:00:00+00:00",
    "closed_at": null,
@@ -117,9 +117,9 @@
    "stop": 300.627172,
    "target": 96.419084,
    "risk_usd": 5.0,
-   "last_price": 238.8,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": 1.055311,
+   "last_price": 239.3,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": 1.006341,
    "opened_at": "2026-11-08T00:00:00+00:00",
    "max_exit_at": "2026-12-07T00:00:00+00:00",
    "closed_at": null,
@@ -140,9 +140,9 @@
    "stop": 0.082953,
    "target": 0.035678,
    "risk_usd": 5.0,
-   "last_price": 0.0684,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": 1.15682,
+   "last_price": 0.06906,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": 0.877601,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -163,9 +163,9 @@
    "stop": 0.218986,
    "target": 0.06628,
    "risk_usd": 5.0,
-   "last_price": 0.1727,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": 1.06211,
+   "last_price": 0.1746,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": 0.813266,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -186,9 +186,9 @@
    "stop": 104.965806,
    "target": 52.838621,
    "risk_usd": 5.0,
-   "last_price": 85.97,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": 2.288253,
+   "last_price": 86.32,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": 2.153966,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -209,9 +209,9 @@
    "stop": 5.254487,
    "target": -0.303194,
    "risk_usd": 5.0,
-   "last_price": 3.505,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": 1.295744,
+   "last_price": 3.543,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": 1.158996,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -232,9 +232,9 @@
    "stop": 1.721013,
    "target": 0.562096,
    "risk_usd": 5.0,
-   "last_price": 1.289,
-   "price_ts": "2026-11-08T21:00:00+00:00",
-   "unrealized_pnl": 2.455464,
+   "last_price": 1.299,
+   "price_ts": "2026-11-08T22:00:00+00:00",
+   "unrealized_pnl": 2.282889,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -541,7 +541,7 @@
   ]
  ],
  "equity_last": [
-  "2026-11-08T22:15:00+00:00",
+  "2026-11-08T23:31:00+00:00",
   1000.0
  ],
  "approver": {
@@ -2067,7 +2067,7 @@
     "open_risk_usd": 43.363515,
     "open_positions": 10,
     "trades_closed": 1,
-    "as_of": "2026-11-08T22:15:00+00:00",
+    "as_of": "2026-11-08T23:31:00+00:00",
     "by_strategy": [
      {
       "strategy": "SW_BREAKOUT+F",
@@ -2103,7 +2103,7 @@
     "open_risk_usd": 10.0,
     "open_positions": 1,
     "trades_closed": 5,
-    "as_of": "2026-11-08T22:15:00+00:00",
+    "as_of": "2026-11-08T23:31:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -2136,7 +2136,7 @@
    "open_risk_usd": 43.449448,
    "open_positions": 9,
    "trades_closed": 0,
-   "as_of": "2026-11-08T22:15:00+00:00",
+   "as_of": "2026-11-08T23:31:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT",
@@ -2165,7 +2165,7 @@
    "open_risk_usd": 43.363515,
    "open_positions": 10,
    "trades_closed": 1,
-   "as_of": "2026-11-08T22:15:00+00:00",
+   "as_of": "2026-11-08T23:31:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT+F",
@@ -2201,7 +2201,7 @@
    "open_risk_usd": 10.0,
    "open_positions": 1,
    "trades_closed": 5,
-   "as_of": "2026-11-08T22:15:00+00:00",
+   "as_of": "2026-11-08T23:31:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -2838,5 +2838,5 @@
    "reason": "stop"
   }
  ],
- "generated_at": "2026-11-08T22:15:57+00:00"
+ "generated_at": "2026-11-08T23:31:19+00:00"
 }
