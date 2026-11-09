@@ -2,19 +2,19 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-11-09T03:05:00+00:00",
+ "last_run": "2026-11-09T07:05:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
-  "balance": 995.920251,
-  "equity": 993.693848,
-  "unrealized_pnl": -2.226404,
-  "pnl": -6.306152,
-  "pnl_pct": -0.630615,
-  "trades_closed": 1,
+  "balance": 990.604165,
+  "equity": 998.036452,
+  "unrealized_pnl": 7.432287,
+  "pnl": -1.963548,
+  "pnl_pct": -0.196355,
+  "trades_closed": 2,
   "wins": 0,
   "win_rate": 0.0,
-  "open_positions": 8
+  "open_positions": 7
  },
  "strategies": [
   {
@@ -24,16 +24,16 @@
    "roll_exp": 0.221768,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-09T03:05:48.514063+00:00"
+   "updated": "2026-11-09T07:05:26.024049+00:00"
   },
   {
    "name": "TR_DONCHIAN",
    "enabled": false,
    "tier": "observação",
-   "roll_exp": -0.078505,
+   "roll_exp": -0.074971,
    "roll_n": 30,
-   "source": "sombra+papel(1)",
-   "updated": "2026-11-09T03:05:48.202509+00:00"
+   "source": "sombra+papel(2)",
+   "updated": "2026-11-09T07:05:25.764645+00:00"
   }
  ],
  "positions": [
@@ -48,36 +48,13 @@
    "stop": 0.88234,
    "target": 0.743504,
    "risk_usd": 5.0,
-   "last_price": 0.875,
-   "price_ts": "2026-11-09T02:00:00+00:00",
-   "unrealized_pnl": -3.678348,
+   "last_price": 0.861,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": -1.15739,
    "opened_at": "2026-11-08T22:00:00+00:00",
    "max_exit_at": "2026-11-28T21:00:00+00:00",
    "closed_at": null,
    "entry": 0.854573,
-   "exit": null,
-   "R": null,
-   "pnl_usd": null,
-   "account": "main"
-  },
-  {
-   "strategy": "TR_DONCHIAN",
-   "symbol": "FILUSDT",
-   "tf": "1h",
-   "side": "VENDA",
-   "dir": -1,
-   "qty": 168.215817,
-   "entry_price": 0.733633,
-   "stop": 0.763357,
-   "target": 0.614738,
-   "risk_usd": 5.0,
-   "last_price": 0.761,
-   "price_ts": "2026-11-09T02:00:00+00:00",
-   "unrealized_pnl": -4.603562,
-   "opened_at": "2026-11-08T22:00:00+00:00",
-   "max_exit_at": "2026-11-28T21:00:00+00:00",
-   "closed_at": null,
-   "entry": 0.733633,
    "exit": null,
    "R": null,
    "pnl_usd": null,
@@ -94,9 +71,9 @@
    "stop": 300.627172,
    "target": 96.419084,
    "risk_usd": 5.0,
-   "last_price": 242.5,
-   "price_ts": "2026-11-09T02:00:00+00:00",
-   "unrealized_pnl": 0.692935,
+   "last_price": 238.1,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": 1.123868,
    "opened_at": "2026-11-08T00:00:00+00:00",
    "max_exit_at": "2026-12-07T00:00:00+00:00",
    "closed_at": null,
@@ -117,9 +94,9 @@
    "stop": 0.082953,
    "target": 0.035678,
    "risk_usd": 5.0,
-   "last_price": 0.06978,
-   "price_ts": "2026-11-09T01:00:00+00:00",
-   "unrealized_pnl": 0.572998,
+   "last_price": 0.06875,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": 1.008749,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -140,9 +117,9 @@
    "stop": 0.218986,
    "target": 0.06628,
    "risk_usd": 5.0,
-   "last_price": 0.1775,
-   "price_ts": "2026-11-09T01:00:00+00:00",
-   "unrealized_pnl": 0.433453,
+   "last_price": 0.1734,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": 0.970431,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -163,9 +140,9 @@
    "stop": 104.965806,
    "target": 52.838621,
    "risk_usd": 5.0,
-   "last_price": 87.8,
-   "price_ts": "2026-11-09T01:00:00+00:00",
-   "unrealized_pnl": 1.586124,
+   "last_price": 86.05,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": 2.257559,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -186,9 +163,9 @@
    "stop": 5.254487,
    "target": -0.303194,
    "risk_usd": 5.0,
-   "last_price": 3.629,
-   "price_ts": "2026-11-09T02:00:00+00:00",
-   "unrealized_pnl": 0.849514,
+   "last_price": 3.535,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": 1.187785,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -209,9 +186,9 @@
    "stop": 1.721013,
    "target": 0.562096,
    "risk_usd": 5.0,
-   "last_price": 1.32,
-   "price_ts": "2026-11-09T02:00:00+00:00",
-   "unrealized_pnl": 1.920482,
+   "last_price": 1.313,
+   "price_ts": "2026-11-09T06:00:00+00:00",
+   "unrealized_pnl": 2.041284,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -223,6 +200,30 @@
   }
  ],
  "trades": [
+  {
+   "time": "2026-11-09T03:00:00+00:00",
+   "entry_ts": "2026-11-08T22:00:00+00:00",
+   "strategy": "TR_DONCHIAN",
+   "symbol": "FILUSDT",
+   "tf": "1h",
+   "side": "VENDA",
+   "dir": -1,
+   "qty": 168.215817,
+   "entry": 0.733633,
+   "price": 0.763738,
+   "risk_usd": 5.0,
+   "R": -1.063217,
+   "pnl": -5.316086,
+   "fees": 0.251882,
+   "reason": "stop",
+   "equity_after": 990.604165,
+   "opened_at": "2026-11-08T22:00:00+00:00",
+   "closed_at": "2026-11-09T03:00:00+00:00",
+   "exit": 0.763738,
+   "pnl_usd": -5.316086,
+   "account": "main",
+   "stop": 0.763357
+  },
   {
    "time": "2026-11-08T23:00:00+00:00",
    "entry_ts": "2026-11-08T22:00:00+00:00",
@@ -248,8 +249,28 @@
    "stop": 689.402601
   }
  ],
- "trades_total": 1,
+ "trades_total": 2,
  "events": [
+  {
+   "ts": "2026-11-09T07:05:25.571808+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: TR_DONCHIAN AVAXUSDT SHORT stop R=-1.08 — Veto/rejeição acertou em TR_DONCHIAN: evitou 1,08R"
+  },
+  {
+   "ts": "2026-11-09T07:05:25.553865+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: TR_DONCHIAN SOLUSDT SHORT stop R=-1.09 — Veto/rejeição acertou em TR_DONCHIAN: evitou 1,09R"
+  },
+  {
+   "ts": "2026-11-09T07:05:25.533775+00:00",
+   "kind": "REVISÃO",
+   "msg": "TR_DONCHIAN FILUSDT loss-stop R=-1.06 — Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN"
+  },
+  {
+   "ts": "2026-11-09T07:05:25.512662+00:00",
+   "kind": "FECHOU",
+   "msg": "TR_DONCHIAN FILUSDT SHORT stop R=-1.06 P&L=$-5.32 patrimônio=$990.60"
+  },
   {
    "ts": "2026-11-09T03:05:47.961715+00:00",
    "kind": "SOMBRA",
@@ -529,26 +550,6 @@
    "ts": "2026-11-08T22:12:09.906097+00:00",
    "kind": "APROVADOR",
    "msg": "REJEITOU TR_DONCHIAN DOGEUSDT SHORT · score 64 — VETO: já existe posição em DOGEUSDT; VETO: 3 posições correlacionadas (corr>0,8) na mesma direção; Exposição 3 correlac. (0/10)"
-  },
-  {
-   "ts": "2026-11-08T22:12:09.906055+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN DOGEUSDT SHORT (vetada, score 64) — sem ordem"
-  },
-  {
-   "ts": "2026-11-08T22:12:09.863690+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN XRPUSDT SHORT · score 64 — VETO: 3 posições correlacionadas (corr>0,8) na mesma direção; Exposição 3 correlac. (0/10); Risco folga 0,66% (3/15)"
-  },
-  {
-   "ts": "2026-11-08T22:12:09.863646+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN XRPUSDT SHORT (vetada, score 64) — sem ordem"
-  },
-  {
-   "ts": "2026-11-08T22:12:09.817500+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN SOLUSDT SHORT · score 64 — VETO: já existe posição em SOLUSDT; VETO: 3 posições correlacionadas (corr>0,8) na mesma direção; Exposição 3 correlac. (0/10)"
   }
  ],
  "equity_curve": [
@@ -559,12 +560,13 @@
   [
    "2026-11-09T00:11:00+00:00",
    995.920251
+  ],
+  [
+   "2026-11-09T07:05:00+00:00",
+   990.604165
   ]
  ],
- "equity_last": [
-  "2026-11-09T03:05:00+00:00",
-  995.920251
- ],
+ "equity_last": null,
  "approver": {
   "enabled": true,
   "threshold": 60,
@@ -1276,9 +1278,31 @@
  "lessons": {
   "schema": "brain.lesson.v1",
   "window_days": 7,
-  "paper_total": 9,
-  "shadow_total": 19,
+  "paper_total": 11,
+  "shadow_total": 23,
   "weekly": [
+   {
+    "lesson_code": "py.learn.lesson.no_chase",
+    "strategy": "TR_DONCHIAN+F",
+    "side": null,
+    "count": 3,
+    "avg_R": -1.106,
+    "win_rate": 0.0,
+    "top_symbols": [
+     "BNBUSDT",
+     "APTUSDT",
+     "FILUSDT"
+    ],
+    "lesson_pt": "Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN+F",
+    "lesson_en": "Don't chase an extended price (> 2 ATR from the EMA50) in TR_DONCHIAN+F",
+    "code": {
+     "key": "py.learn.lesson.no_chase",
+     "params": {
+      "strategy": "TR_DONCHIAN+F",
+      "side": "SHORT"
+     }
+    }
+   },
    {
     "lesson_code": "py.learn.lesson.win_plan",
     "strategy": "TF_CLENOW_XAUUSD_H1",
@@ -1301,34 +1325,14 @@
    },
    {
     "lesson_code": "py.learn.lesson.no_chase",
-    "strategy": "TR_DONCHIAN+F",
+    "strategy": "TR_DONCHIAN",
     "side": null,
     "count": 2,
-    "avg_R": -1.127,
+    "avg_R": -1.123,
     "win_rate": 0.0,
     "top_symbols": [
      "BNBUSDT",
-     "APTUSDT"
-    ],
-    "lesson_pt": "Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN+F",
-    "lesson_en": "Don't chase an extended price (> 2 ATR from the EMA50) in TR_DONCHIAN+F",
-    "code": {
-     "key": "py.learn.lesson.no_chase",
-     "params": {
-      "strategy": "TR_DONCHIAN+F",
-      "side": "SHORT"
-     }
-    }
-   },
-   {
-    "lesson_code": "py.learn.lesson.no_chase",
-    "strategy": "TR_DONCHIAN",
-    "side": null,
-    "count": 1,
-    "avg_R": -1.183,
-    "win_rate": 0.0,
-    "top_symbols": [
-     "BNBUSDT"
+     "FILUSDT"
     ],
     "lesson_pt": "Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN",
     "lesson_en": "Don't chase an extended price (> 2 ATR from the EMA50) in TR_DONCHIAN",
@@ -1346,8 +1350,8 @@
     "lesson_code": "py.learn.lesson.shadow_right",
     "strategy": "TR_DONCHIAN",
     "side": null,
-    "count": 10,
-    "avg_R": -1.094,
+    "count": 12,
+    "avg_R": -1.093,
     "win_rate": 0.0,
     "top_symbols": [
      "BTCUSDT",
@@ -1373,21 +1377,21 @@
     "lesson_code": "py.learn.lesson.shadow_right",
     "strategy": "TR_DONCHIAN+F",
     "side": null,
-    "count": 9,
-    "avg_R": -1.096,
+    "count": 11,
+    "avg_R": -1.095,
     "win_rate": 0.0,
     "top_symbols": [
      "BTCUSDT",
      "DOGEUSDT",
      "ADAUSDT"
     ],
-    "lesson_pt": "Veto/rejeição acertou em TR_DONCHIAN+F: evitou 1,10R",
-    "lesson_en": "Veto/rejection was right in TR_DONCHIAN+F: avoided 1.10R",
+    "lesson_pt": "Veto/rejeição acertou em TR_DONCHIAN+F: evitou 1,09R",
+    "lesson_en": "Veto/rejection was right in TR_DONCHIAN+F: avoided 1.09R",
     "code": {
      "key": "py.learn.lesson.shadow_right",
      "params": {
       "r": {
-       "n": 1.1,
+       "n": 1.09,
        "d": 2,
        "sign": false
       },
@@ -2016,30 +2020,30 @@
     "baseline": {
      "name": "TR_DONCHIAN",
      "account": "main",
-     "trades": 1,
+     "trades": 2,
      "wins": 0,
      "win_rate": 0.0,
-     "net_R": -1.183,
-     "avg_R": -1.183,
-     "pnl": -4.08,
-     "equity": 995.92,
-     "open_positions": 2,
+     "net_R": -2.246,
+     "avg_R": -1.123,
+     "pnl": -9.4,
+     "equity": 990.6,
+     "open_positions": 1,
      "demo_ready": false,
-     "demo_progress": "1/30"
+     "demo_progress": "2/30"
     },
     "filtered": {
      "name": "TR_DONCHIAN+F",
      "account": "ab-filtered",
-     "trades": 2,
+     "trades": 3,
      "wins": 0,
      "win_rate": 0.0,
-     "net_R": -2.254,
-     "avg_R": -1.127,
-     "pnl": -9.42,
-     "equity": 990.58,
-     "open_positions": 2,
+     "net_R": -3.317,
+     "avg_R": -1.106,
+     "pnl": -14.72,
+     "equity": 985.28,
+     "open_positions": 1,
      "demo_ready": false,
-     "demo_progress": "2/30",
+     "demo_progress": "3/30",
      "filter_actions": {
       "full": 15,
       "half_vol": 3
@@ -2070,16 +2074,16 @@
    {
     "name": "TR_DONCHIAN",
     "account": "main",
-    "trades": 1,
+    "trades": 2,
     "wins": 0,
     "win_rate": 0.0,
-    "net_R": -1.183,
-    "avg_R": -1.183,
-    "pnl": -4.08,
-    "equity": 995.92,
+    "net_R": -2.246,
+    "avg_R": -1.123,
+    "pnl": -9.4,
+    "equity": 990.6,
     "open_positions": 0,
     "demo_ready": false,
-    "demo_progress": "1/30"
+    "demo_progress": "2/30"
    },
    {
     "name": "SW_BREAKOUT+F",
@@ -2112,16 +2116,16 @@
    {
     "name": "TR_DONCHIAN+F",
     "account": "ab-filtered",
-    "trades": 2,
+    "trades": 3,
     "wins": 0,
     "win_rate": 0.0,
-    "net_R": -2.254,
-    "avg_R": -1.127,
-    "pnl": -9.42,
-    "equity": 990.58,
+    "net_R": -3.317,
+    "avg_R": -1.106,
+    "pnl": -14.72,
+    "equity": 985.28,
     "open_positions": 0,
     "demo_ready": false,
-    "demo_progress": "2/30"
+    "demo_progress": "3/30"
    },
    {
     "name": "TF_CLENOW_XAUUSD_H1",
@@ -2244,7 +2248,7 @@
     "equity": 1031.4,
     "open_positions": 0,
     "position": null,
-    "last_bar_ts": "2026-11-09 01:00:00+00:00",
+    "last_bar_ts": "2026-11-09 05:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "5/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -2349,13 +2353,13 @@
     "db": "paper_ab.db",
     "currency": "USD",
     "start_balance": 1000.0,
-    "balance": 988.604163,
-    "equity": 988.604163,
-    "realised_pnl": -11.395837,
-    "open_risk_usd": 34.930778,
-    "open_positions": 8,
-    "trades_closed": 3,
-    "as_of": "2026-11-09T03:05:00+00:00",
+    "balance": 983.298591,
+    "equity": 983.298591,
+    "realised_pnl": -16.701409,
+    "open_risk_usd": 29.940667,
+    "open_positions": 7,
+    "trades_closed": 4,
+    "as_of": "2026-11-09T07:05:00+00:00",
     "by_strategy": [
      {
       "strategy": "SW_BREAKOUT+F",
@@ -2373,10 +2377,10 @@
      },
      {
       "strategy": "TR_DONCHIAN+F",
-      "trades_closed": 2,
-      "realised_pnl": -9.418064,
-      "open_positions": 2,
-      "open_risk_usd": 9.980222
+      "trades_closed": 3,
+      "realised_pnl": -14.723636,
+      "open_positions": 1,
+      "open_risk_usd": 4.990111
      }
     ]
    },
@@ -2391,7 +2395,7 @@
     "open_risk_usd": 10.0,
     "open_positions": 1,
     "trades_closed": 5,
-    "as_of": "2026-11-09T03:05:00+00:00",
+    "as_of": "2026-11-09T07:05:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -2418,13 +2422,13 @@
    "db": "paper.db",
    "currency": "USD",
    "start_balance": 1000.0,
-   "balance": 995.920251,
-   "equity": 995.920251,
-   "realised_pnl": -4.079749,
-   "open_risk_usd": 40.0,
-   "open_positions": 8,
-   "trades_closed": 1,
-   "as_of": "2026-11-09T03:05:00+00:00",
+   "balance": 990.604165,
+   "equity": 990.604165,
+   "realised_pnl": -9.395835,
+   "open_risk_usd": 35.0,
+   "open_positions": 7,
+   "trades_closed": 2,
+   "as_of": "2026-11-09T07:05:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT",
@@ -2435,10 +2439,10 @@
     },
     {
      "strategy": "TR_DONCHIAN",
-     "trades_closed": 1,
-     "realised_pnl": -4.079749,
-     "open_positions": 2,
-     "open_risk_usd": 10.0
+     "trades_closed": 2,
+     "realised_pnl": -9.395835,
+     "open_positions": 1,
+     "open_risk_usd": 5.0
     }
    ]
   },
@@ -2447,13 +2451,13 @@
    "db": "paper_ab.db",
    "currency": "USD",
    "start_balance": 1000.0,
-   "balance": 988.604163,
-   "equity": 988.604163,
-   "realised_pnl": -11.395837,
-   "open_risk_usd": 34.930778,
-   "open_positions": 8,
-   "trades_closed": 3,
-   "as_of": "2026-11-09T03:05:00+00:00",
+   "balance": 983.298591,
+   "equity": 983.298591,
+   "realised_pnl": -16.701409,
+   "open_risk_usd": 29.940667,
+   "open_positions": 7,
+   "trades_closed": 4,
+   "as_of": "2026-11-09T07:05:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT+F",
@@ -2471,10 +2475,10 @@
     },
     {
      "strategy": "TR_DONCHIAN+F",
-     "trades_closed": 2,
-     "realised_pnl": -9.418064,
-     "open_positions": 2,
-     "open_risk_usd": 9.980222
+     "trades_closed": 3,
+     "realised_pnl": -14.723636,
+     "open_positions": 1,
+     "open_risk_usd": 4.990111
     }
    ]
   },
@@ -2489,7 +2493,7 @@
    "open_risk_usd": 10.0,
    "open_positions": 1,
    "trades_closed": 5,
-   "as_of": "2026-11-09T03:05:00+00:00",
+   "as_of": "2026-11-09T07:05:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_XAUUSD_D1",
@@ -2518,9 +2522,9 @@
    },
    {
     "month": "2026-11",
-    "return_pct": -0.407975,
-    "pnl_usd": -4.079749,
-    "trades": 1
+    "return_pct": -0.939583,
+    "pnl_usd": -9.395835,
+    "trades": 2
    }
   ],
   "ab-filtered": [
@@ -2532,9 +2536,9 @@
    },
    {
     "month": "2026-11",
-    "return_pct": -0.943673,
-    "pnl_usd": -9.418064,
-    "trades": 2
+    "return_pct": -1.475281,
+    "pnl_usd": -14.723636,
+    "trades": 3
    }
   ],
   "clenow-paper": [
@@ -2553,6 +2557,50 @@
   ]
  },
  "all_trades": [
+  {
+   "id": "main:2",
+   "account": "main",
+   "status": "closed",
+   "strategy": "TR_DONCHIAN",
+   "symbol": "FILUSDT",
+   "tf": "1h",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-08T22:00:00+00:00",
+   "closed_at": "2026-11-09T03:00:00+00:00",
+   "entry": 0.733633,
+   "stop": 0.763357,
+   "stop_derived": true,
+   "exit": 0.763738,
+   "qty": 168.215817,
+   "risk_usd": 5.0,
+   "R": -1.063217,
+   "pnl_usd": -5.316086,
+   "fees_usd": 0.251882,
+   "reason": "stop"
+  },
+  {
+   "id": "ab-filtered:4",
+   "account": "ab-filtered",
+   "status": "closed",
+   "strategy": "TR_DONCHIAN+F",
+   "symbol": "FILUSDT",
+   "tf": "1h",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-08T22:00:00+00:00",
+   "closed_at": "2026-11-09T03:00:00+00:00",
+   "entry": 0.733633,
+   "stop": 0.763357,
+   "stop_derived": true,
+   "exit": 0.763738,
+   "qty": 167.883124,
+   "risk_usd": 4.990111,
+   "R": -1.063217,
+   "pnl_usd": -5.305572,
+   "fees_usd": 0.251383,
+   "reason": "stop"
+  },
   {
    "id": "main:1",
    "account": "main",
@@ -2642,28 +2690,6 @@
    "reason": null
   },
   {
-   "id": "main:open:9",
-   "account": "main",
-   "status": "open",
-   "strategy": "TR_DONCHIAN",
-   "symbol": "FILUSDT",
-   "tf": "1h",
-   "side": "VENDA",
-   "dir": -1,
-   "opened_at": "2026-11-08T22:00:00+00:00",
-   "closed_at": null,
-   "entry": 0.733633,
-   "stop": 0.763357,
-   "stop_derived": false,
-   "exit": null,
-   "qty": 168.215817,
-   "risk_usd": 5.0,
-   "R": null,
-   "pnl_usd": null,
-   "fees_usd": null,
-   "reason": null
-  },
-  {
    "id": "ab-filtered:open:8",
    "account": "ab-filtered",
    "status": "open",
@@ -2679,28 +2705,6 @@
    "stop_derived": false,
    "exit": null,
    "qty": 179.712306,
-   "risk_usd": 4.990111,
-   "R": null,
-   "pnl_usd": null,
-   "fees_usd": null,
-   "reason": null
-  },
-  {
-   "id": "ab-filtered:open:9",
-   "account": "ab-filtered",
-   "status": "open",
-   "strategy": "TR_DONCHIAN+F",
-   "symbol": "FILUSDT",
-   "tf": "1h",
-   "side": "VENDA",
-   "dir": -1,
-   "opened_at": "2026-11-08T22:00:00+00:00",
-   "closed_at": null,
-   "entry": 0.733633,
-   "stop": 0.763357,
-   "stop_derived": false,
-   "exit": null,
-   "qty": 167.883124,
    "risk_usd": 4.990111,
    "R": null,
    "pnl_usd": null,
@@ -3126,5 +3130,5 @@
    "reason": "stop"
   }
  ],
- "generated_at": "2026-11-09T03:05:50+00:00"
+ "generated_at": "2026-11-09T07:05:27+00:00"
 }
