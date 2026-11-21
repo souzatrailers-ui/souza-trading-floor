@@ -2,15 +2,15 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-11-20T23:00:00+00:00",
+ "last_run": "2026-11-21T00:01:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
   "balance": 1021.762964,
-  "equity": 1075.815977,
-  "unrealized_pnl": 54.053013,
-  "pnl": 75.815977,
-  "pnl_pct": 7.581598,
+  "equity": 1079.012541,
+  "unrealized_pnl": 57.249578,
+  "pnl": 79.012541,
+  "pnl_pct": 7.901254,
   "trades_closed": 6,
   "wins": 2,
   "win_rate": 33.333333,
@@ -21,10 +21,10 @@
    "name": "SW_BREAKOUT",
    "enabled": true,
    "tier": "observação",
-   "roll_exp": 0.134522,
+   "roll_exp": 0.267645,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-20T23:00:56.572392+00:00"
+   "updated": "2026-11-21T00:00:58.223951+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": 1.665369,
    "roll_n": 30,
    "source": "sombra+papel(6)",
-   "updated": "2026-11-20T23:00:56.352702+00:00"
+   "updated": "2026-11-21T00:00:57.970823+00:00"
   }
  ],
  "positions": [
@@ -48,9 +48,9 @@
    "stop": 0.690777,
    "target": 0.530244,
    "risk_usd": 5.0,
-   "last_price": 0.673,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": -2.231547,
+   "last_price": 0.663,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": -0.674237,
    "opened_at": "2026-11-20T16:00:00+00:00",
    "max_exit_at": "2026-12-10T15:00:00+00:00",
    "closed_at": null,
@@ -71,9 +71,9 @@
    "stop": 606.593528,
    "target": 505.459238,
    "risk_usd": 5.0,
-   "last_price": 540.65,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 11.300982,
+   "last_price": 540.84,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 11.254014,
    "opened_at": "2026-11-14T17:00:00+00:00",
    "max_exit_at": "2026-12-04T16:00:00+00:00",
    "closed_at": null,
@@ -94,9 +94,9 @@
    "stop": 7.848783,
    "target": 6.031146,
    "risk_usd": 5.0,
-   "last_price": 6.597,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 12.217173,
+   "last_price": 6.521,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 13.262486,
    "opened_at": "2026-11-14T17:00:00+00:00",
    "max_exit_at": "2026-12-04T16:00:00+00:00",
    "closed_at": null,
@@ -117,9 +117,9 @@
    "stop": 300.627172,
    "target": 96.419084,
    "risk_usd": 5.0,
-   "last_price": 195.0,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 5.345053,
+   "last_price": 194.8,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 5.364641,
    "opened_at": "2026-11-08T00:00:00+00:00",
    "max_exit_at": "2026-12-07T00:00:00+00:00",
    "closed_at": null,
@@ -140,9 +140,9 @@
    "stop": 0.082953,
    "target": 0.035678,
    "risk_usd": 5.0,
-   "last_price": 0.05457,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 7.00773,
+   "last_price": 0.05439,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 7.083881,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -163,9 +163,9 @@
    "stop": 0.218986,
    "target": 0.06628,
    "risk_usd": 5.0,
-   "last_price": 0.1437,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 4.860247,
+   "last_price": 0.1431,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 4.938829,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -186,9 +186,9 @@
    "stop": 104.965806,
    "target": 52.838621,
    "risk_usd": 5.0,
-   "last_price": 69.35,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 8.664964,
+   "last_price": 68.88,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 8.845292,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -209,9 +209,9 @@
    "stop": 5.254487,
    "target": -0.303194,
    "risk_usd": 5.0,
-   "last_price": 2.873,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 3.570074,
+   "last_price": 2.851,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 3.649244,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -232,9 +232,9 @@
    "stop": 1.721013,
    "target": 0.562096,
    "risk_usd": 5.0,
-   "last_price": 1.239,
-   "price_ts": "2026-11-20T22:00:00+00:00",
-   "unrealized_pnl": 3.318338,
+   "last_price": 1.227,
+   "price_ts": "2026-11-20T23:00:00+00:00",
+   "unrealized_pnl": 3.525428,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -393,6 +393,126 @@
  ],
  "trades_total": 6,
  "events": [
+  {
+   "ts": "2026-11-21T00:01:00.111527+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT SUIUSDT SHORT · score 61 — VETO: piso 4,5%: somaria 4,89%; VETO: 7 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:01:00.111474+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT SUIUSDT SHORT (vetada, score 61) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:01:00.051485+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT APTUSDT SHORT · score 61 — VETO: piso 4,5%: somaria 4,89%; VETO: 5 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:01:00.051455+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT APTUSDT SHORT (vetada, score 61) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:01:00.007442+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT FILUSDT SHORT · score 64 — VETO: piso 4,5%: somaria 4,89%; Risco folga 0,00% (0/15); Exposição 2 correlac. (3/10)"
+  },
+  {
+   "ts": "2026-11-21T00:01:00.007378+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT FILUSDT SHORT (vetada, score 64) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.964838+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT ETCUSDT SHORT · score 60 — VETO: piso 4,5%: somaria 4,89%; VETO: 6 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.964736+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT ETCUSDT SHORT (vetada, score 60) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.920184+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT UNIUSDT SHORT · score 64 — VETO: piso 4,5%: somaria 4,89%; Risco folga 0,00% (0/15); Exposição 2 correlac. (3/10)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.920134+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT UNIUSDT SHORT (vetada, score 64) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.871922+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT LTCUSDT SHORT · score 60 — VETO: piso 4,5%: somaria 4,89%; VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.871884+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT LTCUSDT SHORT (vetada, score 60) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.825992+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT DOTUSDT SHORT · score 66 — VETO: piso 4,5%: somaria 4,89%; VETO: já existe posição em DOTUSDT; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.825955+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT DOTUSDT SHORT (vetada, score 66) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.784381+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT LINKUSDT SHORT · score 60 — VETO: piso 4,5%: somaria 4,89%; VETO: 5 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.784344+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT LINKUSDT SHORT (vetada, score 60) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.736682+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT AVAXUSDT SHORT · score 60 — VETO: piso 4,5%: somaria 4,89%; VETO: já existe posição em AVAXUSDT; VETO: 3 posições correlacionadas (corr>0,8) na mesma direção"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.736647+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT AVAXUSDT SHORT (vetada, score 60) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.690096+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT BNBUSDT SHORT · score 60 — VETO: piso 4,5%: somaria 4,89%; VETO: já existe posição em BNBUSDT; VETO: 3 posições correlacionadas (corr>0,8) na mesma direção"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.690061+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT BNBUSDT SHORT (vetada, score 60) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.647947+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT ETHUSDT SHORT · score 61 — VETO: piso 4,5%: somaria 4,89%; VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.647895+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT ETHUSDT SHORT (vetada, score 61) — sem ordem"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.602916+00:00",
+   "kind": "APROVADOR",
+   "msg": "REJEITOU SW_BREAKOUT BTCUSDT SHORT · score 61 — VETO: piso 4,5%: somaria 4,89%; VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
+  },
+  {
+   "ts": "2026-11-21T00:00:59.602831+00:00",
+   "kind": "SOMBRA",
+   "msg": "sombra: SW_BREAKOUT BTCUSDT SHORT (vetada, score 61) — sem ordem"
+  },
   {
    "ts": "2026-11-20T21:19:51.013942+00:00",
    "kind": "APROVADOR",
@@ -572,126 +692,6 @@
    "ts": "2026-11-20T16:08:35.951789+00:00",
    "kind": "APROVADOR",
    "msg": "REJEITOU TR_DONCHIAN UNIUSDT SHORT · score 67 — VETO: piso 4,5%: somaria 4,89%; Risco folga 0,00% (0/15); Exposição 2 correlac. (3/10)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.951736+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN UNIUSDT SHORT (vetada, score 67) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.891075+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN ATOMUSDT SHORT · score 77 — VETO: piso 4,5%: somaria 4,89%; VETO: já existe posição em ATOMUSDT; Risco folga 0,00% (0/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.891017+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN ATOMUSDT SHORT (vetada, score 77) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.832625+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN NEARUSDT SHORT · score 77 — VETO: piso 4,5%: somaria 4,89%; VETO: já existe posição em NEARUSDT; Risco folga 0,00% (0/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.832558+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN NEARUSDT SHORT (vetada, score 77) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.776589+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN BCHUSDT SHORT · score 77 — VETO: piso 4,5%: somaria 4,89%; VETO: já existe posição em BCHUSDT; Risco folga 0,00% (0/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.776534+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN BCHUSDT SHORT (vetada, score 77) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.718195+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN LTCUSDT SHORT · score 63 — VETO: piso 4,5%: somaria 4,89%; VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,00% (0/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.718138+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN LTCUSDT SHORT (vetada, score 63) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.655745+00:00",
-   "kind": "ABRIU",
-   "msg": "[observação] TR_DONCHIAN DOTUSDT SHORT @ 0.658671 stop 0.690777 alvo 0.530244 risco $5.00 (PAPEL)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.655426+00:00",
-   "kind": "APROVADOR",
-   "msg": "APROVOU TR_DONCHIAN DOTUSDT SHORT · score 67 · tamanho ×0.5 — score 67 ≥ limite 60; R:R 1:4,0 (15/15); Gráfico a favor (15/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.590130+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN LINKUSDT SHORT · score 63 — VETO: 5 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,10% (0/15); Exposição 5 correlac. (0/10)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.590079+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN LINKUSDT SHORT (vetada, score 63) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.528090+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN ADAUSDT SHORT · score 63 — VETO: já existe posição em ADAUSDT; VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,10% (0/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.528036+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN ADAUSDT SHORT (vetada, score 63) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.475598+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN DOGEUSDT SHORT · score 63 — VETO: já existe posição em DOGEUSDT; VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,10% (0/15)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.475532+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN DOGEUSDT SHORT (vetada, score 63) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.406664+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN ETHUSDT SHORT · score 63 — VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,10% (0/15); Exposição 4 correlac. (0/10)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.406623+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN ETHUSDT SHORT (vetada, score 63) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.347767+00:00",
-   "kind": "APROVADOR",
-   "msg": "REJEITOU TR_DONCHIAN BTCUSDT SHORT · score 63 — VETO: 4 posições correlacionadas (corr>0,8) na mesma direção; Risco folga 0,10% (0/15); Exposição 4 correlac. (0/10)"
-  },
-  {
-   "ts": "2026-11-20T16:08:35.347708+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN BTCUSDT SHORT (vetada, score 63) — sem ordem"
-  },
-  {
-   "ts": "2026-11-20T16:08:34.241066+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN ETCUSDT SHORT alvo R=+3.94 — Veto/rejeição custou +3,94R em TR_DONCHIAN: revisar o critério Risco"
-  },
-  {
-   "ts": "2026-11-20T16:08:34.170411+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN LTCUSDT SHORT alvo R=+3.95 — Veto/rejeição custou +3,95R em TR_DONCHIAN: revisar o critério Risco"
-  },
-  {
-   "ts": "2026-11-20T16:08:34.127343+00:00",
-   "kind": "SOMBRA",
-   "msg": "sombra: TR_DONCHIAN ETHUSDT SHORT alvo R=+3.95 — Veto/rejeição custou +3,95R em TR_DONCHIAN: revisar o critério Risco"
   }
  ],
  "equity_curve": [
@@ -721,7 +721,7 @@
   ]
  ],
  "equity_last": [
-  "2026-11-20T23:00:00+00:00",
+  "2026-11-21T00:01:00+00:00",
   1021.762964
  ],
  "approver": {
@@ -744,8 +744,236 @@
   ],
   "kill_switch": false,
   "approved": 15,
-  "rejected": 164,
+  "rejected": 176,
   "decisions": [
+   {
+    "ts": "2026-11-21T00:01:00.111114+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "SUIUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 61,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 7 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 7 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,17R (n≈10) (8/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:01:00.051200+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "APTUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 61,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 5 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 5 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,19R (n≈7) (8/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:01:00.007172+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "FILUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 64,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 2 correlac. (3/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,08R (n≈9) (7/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT",
+     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.964541+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "ETCUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 60,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 6 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 6 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,07R (n≈9) (7/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.919922+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "UNIUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 64,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 2 correlac. (3/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,04R (n≈10) (7/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT",
+     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.871680+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "LTCUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 60,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 4 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,02R (n≈8) (7/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.825761+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "DOTUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 66,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: já existe posição em DOTUSDT",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 2 correlac. (3/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,16R (n≈9) (8/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.784125+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "LINKUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 60,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 5 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 5 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,02R (n≈9) (7/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.736451+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "AVAXUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 60,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: já existe posição em AVAXUSDT",
+     "VETO: 3 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 3 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,06R (n≈9) (7/10)"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.689864+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "BNBUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 60,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: já existe posição em BNBUSDT",
+     "VETO: 3 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 3 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,04R (n≈9) (7/10)"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.647612+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "ETHUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 61,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 4 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,17R (n≈9) (8/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
+   {
+    "ts": "2026-11-21T00:00:59.601419+00:00",
+    "strategy": "SW_BREAKOUT",
+    "symbol": "BTCUSDT",
+    "tf": "1d",
+    "side": "VENDA",
+    "signal_ts": "2026-11-20T00:00:00+00:00",
+    "score": 61,
+    "decision": "REJEITADO",
+    "size_mult": 0.0,
+    "reasons": [
+     "VETO: piso 4,5%: somaria 4,89%",
+     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
+     "Risco folga 0,00% (0/15)",
+     "Exposição 4 correlac. (0/10)",
+     "Histórico observação · exp +0,27R · ×0,5 · similares +0,11R (n≈9) (8/10)",
+     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT"
+    ]
+   },
    {
     "ts": "2026-11-20T21:19:51.013552+00:00",
     "strategy": "TR_DONCHIAN",
@@ -1274,234 +1502,6 @@
      "Risco folga 0,10% (0/15)",
      "Exposição 3 correlac. (0/10)",
      "Histórico observação · exp +0,99R · ×0,5 · similares +0,26R (n≈16) (9/10)",
-     "Lições similares: Alta volatilidade: reduzir tamanho ou esperar regime normal em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-20T00:47:51.891568+00:00",
-    "strategy": "SW_BREAKOUT",
-    "symbol": "APTUSDT",
-    "tf": "1d",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T00:00:00+00:00",
-    "score": 60,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 4 correlac. (0/10)",
-     "Histórico observação · exp +0,13R · ×0,5 · similares +0,15R (n≈7) (7/10)",
-     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-20T00:47:51.829874+00:00",
-    "strategy": "SW_BREAKOUT",
-    "symbol": "LTCUSDT",
-    "tf": "1d",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T00:00:00+00:00",
-    "score": 59,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 3 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 3 correlac. (0/10)",
-     "Histórico observação · exp +0,13R · ×0,5 · similares -0,01R (n≈8) (6/10)",
-     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-20T00:47:51.767607+00:00",
-    "strategy": "SW_BREAKOUT",
-    "symbol": "BTCUSDT",
-    "tf": "1d",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T00:00:00+00:00",
-    "score": 60,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 4 correlac. (0/10)",
-     "Histórico observação · exp +0,13R · ×0,5 · similares +0,08R (n≈9) (7/10)",
-     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-19T22:50:40.029996+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "BTCUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T21:00:00+00:00",
-    "score": 63,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 4 correlac. (0/10)",
-     "Histórico observação · exp +1,09R · ×0,5 · similares +0,27R (n≈16) (9/10)",
-     "Lições similares: Alta volatilidade: reduzir tamanho ou esperar regime normal em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-19T21:00:56.702486+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "LTCUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T20:00:00+00:00",
-    "score": 63,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 3 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 3 correlac. (0/10)",
-     "Histórico observação · exp +1,09R · ×0,5 · similares +0,26R (n≈16) (9/10)",
-     "Lições similares: Alta volatilidade: reduzir tamanho ou esperar regime normal em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-19T18:00:57.559558+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "LTCUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T17:00:00+00:00",
-    "score": 59,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 3 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 3 correlac. (0/10)",
-     "Histórico observação · exp +1,09R · ×0,5 · similares -0,22R (n≈15) (6/10)",
-     "Lições similares: Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-19T16:35:40.139035+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "APTUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-19T15:00:00+00:00",
-    "score": 59,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: 3 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,10% (0/15)",
-     "Exposição 3 correlac. (0/10)",
-     "Histórico observação · exp +1,09R · ×0,5 · similares -0,19R (n≈14) (6/10)",
-     "Lições similares: Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-19T00:48:42.524487+00:00",
-    "strategy": "SW_BREAKOUT",
-    "symbol": "FILUSDT",
-    "tf": "1d",
-    "side": "VENDA",
-    "signal_ts": "2026-11-18T00:00:00+00:00",
-    "score": 63,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: piso 4,5%: somaria 4,57%",
-     "Risco folga 0,00% (0/15)",
-     "Exposição 2 correlac. (3/10)",
-     "Histórico observação · exp +0,13R · ×0,5 · similares +0,05R (n≈9) (6/10)",
-     "Lições similares: Lucro pequeno no prazo em SW_BREAKOUT: alvo talvez longo demais para 1d; Alta volatilidade: reduzir tamanho ou esperar regime normal em SW_BREAKOUT",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-18T23:19:43.117659+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "FILUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-18T22:00:00+00:00",
-    "score": 67,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: piso 4,5%: somaria 4,57%",
-     "Risco folga 0,00% (0/15)",
-     "Exposição 2 correlac. (3/10)",
-     "Histórico observação · exp +1,27R · ×0,5 · similares +0,31R (n≈16) (9/10)",
-     "Lições similares: Alta volatilidade: reduzir tamanho ou esperar regime normal em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-18T17:00:57.682393+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "APTUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-18T16:00:00+00:00",
-    "score": 59,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: piso 4,5%: somaria 4,57%",
-     "VETO: 4 posições correlacionadas (corr>0,8) na mesma direção",
-     "Risco folga 0,00% (0/15)",
-     "Exposição 4 correlac. (0/10)",
-     "Histórico observação · exp +1,27R · ×0,5 · similares -0,19R (n≈14) (6/10)",
-     "Lições similares: Não perseguir preço esticado (> 2 ATR da EMA50) em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência"
-    ]
-   },
-   {
-    "ts": "2026-11-18T16:16:10.933758+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "FILUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-18T15:00:00+00:00",
-    "score": 67,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: piso 4,5%: somaria 4,57%",
-     "Risco folga 0,00% (0/15)",
-     "Exposição 2 correlac. (3/10)",
-     "Histórico observação · exp +1,27R · ×0,5 · similares +0,31R (n≈16) (9/10)",
-     "Lições similares: Alta volatilidade: reduzir tamanho ou esperar regime normal em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
-     "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
-    ]
-   },
-   {
-    "ts": "2026-11-15T02:00:54.535542+00:00",
-    "strategy": "TR_DONCHIAN",
-    "symbol": "FILUSDT",
-    "tf": "1h",
-    "side": "VENDA",
-    "signal_ts": "2026-11-15T01:00:00+00:00",
-    "score": 74,
-    "decision": "REJEITADO",
-    "size_mult": 0.0,
-    "reasons": [
-     "VETO: piso 4,5%: somaria 4,57%",
-     "Risco folga 0,00% (0/15)",
-     "Exposição 1 correlac. (7/10)",
-     "R:R 1:4,0 (15/15)",
      "Lições similares: Alta volatilidade: reduzir tamanho ou esperar regime normal em TR_DONCHIAN; SHORT a favor do BTC e do gráfico funcionou em TR_DONCHIAN: manter o filtro de tendência",
      "Cético/Notícias: não disponíveis no paper trader (não pontuados)"
     ]
@@ -2416,16 +2416,16 @@
      "avg_R": null,
      "pnl": 0,
      "equity": 1000.0,
-     "open_positions": 7,
+     "open_positions": 8,
      "demo_ready": false,
      "demo_progress": "0/30",
      "filter_actions": {
       "full": 35,
-      "half_vol": 34
+      "half_vol": 49
      },
      "approver": {
-      "APROVADO": 7,
-      "REJEITADO": 27
+      "APROVADO": 8,
+      "REJEITADO": 35
      }
     },
     "delta_net_R": 0
@@ -2775,7 +2775,7 @@
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
    }
   ],
-  "activity": 285,
+  "activity": 301,
   "accounts": [
    {
     "account": "ab-filtered",
@@ -2785,17 +2785,17 @@
     "balance": 1028.292426,
     "equity": 1028.292426,
     "realised_pnl": 28.292426,
-    "open_risk_usd": 39.840141,
-    "open_positions": 11,
+    "open_risk_usd": 42.340141,
+    "open_positions": 12,
     "trades_closed": 11,
-    "as_of": "2026-11-20T23:00:00+00:00",
+    "as_of": "2026-11-21T00:01:00+00:00",
     "by_strategy": [
      {
       "strategy": "SW_BREAKOUT+F",
       "trades_closed": 0,
       "realised_pnl": 0.0,
-      "open_positions": 7,
-      "open_risk_usd": 29.840141
+      "open_positions": 8,
+      "open_risk_usd": 32.340141
      },
      {
       "strategy": "SW_PULLBACK+F",
@@ -2824,7 +2824,7 @@
     "open_risk_usd": 30.0,
     "open_positions": 3,
     "trades_closed": 9,
-    "as_of": "2026-11-20T23:00:00+00:00",
+    "as_of": "2026-11-21T00:01:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_NAS100_D1",
@@ -2864,7 +2864,7 @@
    "open_risk_usd": 45.0,
    "open_positions": 9,
    "trades_closed": 6,
-   "as_of": "2026-11-20T23:00:00+00:00",
+   "as_of": "2026-11-21T00:01:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT",
@@ -2890,17 +2890,17 @@
    "balance": 1028.292426,
    "equity": 1028.292426,
    "realised_pnl": 28.292426,
-   "open_risk_usd": 39.840141,
-   "open_positions": 11,
+   "open_risk_usd": 42.340141,
+   "open_positions": 12,
    "trades_closed": 11,
-   "as_of": "2026-11-20T23:00:00+00:00",
+   "as_of": "2026-11-21T00:01:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT+F",
      "trades_closed": 0,
      "realised_pnl": 0.0,
-     "open_positions": 7,
-     "open_risk_usd": 29.840141
+     "open_positions": 8,
+     "open_risk_usd": 32.340141
     },
     {
      "strategy": "SW_PULLBACK+F",
@@ -2929,7 +2929,7 @@
    "open_risk_usd": 30.0,
    "open_positions": 3,
    "trades_closed": 9,
-   "as_of": "2026-11-20T23:00:00+00:00",
+   "as_of": "2026-11-21T00:01:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_NAS100_D1",
@@ -3000,6 +3000,28 @@
   ]
  },
  "all_trades": [
+  {
+   "id": "ab-filtered:open:16",
+   "account": "ab-filtered",
+   "status": "open",
+   "strategy": "SW_BREAKOUT+F",
+   "symbol": "FILUSDT",
+   "tf": "1d",
+   "side": "VENDA",
+   "dir": -1,
+   "opened_at": "2026-11-21T00:00:00+00:00",
+   "closed_at": null,
+   "entry": 0.535632,
+   "stop": 0.712382,
+   "stop_derived": false,
+   "exit": null,
+   "qty": 14.144237,
+   "risk_usd": 2.5,
+   "R": null,
+   "pnl_usd": null,
+   "fees_usd": null,
+   "reason": null
+  },
   {
    "id": "ab-filtered:11",
    "account": "ab-filtered",
@@ -4079,5 +4101,5 @@
    "reason": "stop"
   }
  ],
- "generated_at": "2026-11-20T23:00:57+00:00"
+ "generated_at": "2026-11-21T00:01:01+00:00"
 }
