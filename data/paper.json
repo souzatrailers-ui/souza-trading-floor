@@ -2,15 +2,15 @@
  "source": "souza-algo paper trader",
  "mode": "papel",
  "currency": "USD",
- "last_run": "2026-11-24T21:30:00+00:00",
+ "last_run": "2026-11-24T22:50:00+00:00",
  "account": {
   "currency": "USD",
   "start_balance": 1000.0,
   "balance": 1056.04317,
-  "equity": 1088.172424,
-  "unrealized_pnl": 32.129254,
-  "pnl": 88.172424,
-  "pnl_pct": 8.817242,
+  "equity": 1088.016952,
+  "unrealized_pnl": 31.973782,
+  "pnl": 88.016952,
+  "pnl_pct": 8.801695,
   "trades_closed": 9,
   "wins": 4,
   "win_rate": 44.444444,
@@ -24,7 +24,7 @@
    "roll_exp": 0.344587,
    "roll_n": 30,
    "source": "sombra+papel(0)",
-   "updated": "2026-11-24T21:30:57.148405+00:00"
+   "updated": "2026-11-24T22:50:09.847876+00:00"
   },
   {
    "name": "TR_DONCHIAN",
@@ -33,7 +33,7 @@
    "roll_exp": 1.095644,
    "roll_n": 30,
    "source": "sombra+papel(9)",
-   "updated": "2026-11-24T21:30:56.909055+00:00"
+   "updated": "2026-11-24T22:50:09.568017+00:00"
   }
  ],
  "positions": [
@@ -48,9 +48,9 @@
    "stop": 300.627172,
    "target": 96.419084,
    "risk_usd": 5.0,
-   "last_price": 195.7,
-   "price_ts": "2026-11-24T20:00:00+00:00",
-   "unrealized_pnl": 5.276495,
+   "last_price": 196.4,
+   "price_ts": "2026-11-24T21:00:00+00:00",
+   "unrealized_pnl": 5.207938,
    "opened_at": "2026-11-08T00:00:00+00:00",
    "max_exit_at": "2026-12-07T00:00:00+00:00",
    "closed_at": null,
@@ -71,9 +71,9 @@
    "stop": 0.082953,
    "target": 0.035678,
    "risk_usd": 5.0,
-   "last_price": 0.05529,
-   "price_ts": "2026-11-24T20:00:00+00:00",
-   "unrealized_pnl": 6.703128,
+   "last_price": 0.05538,
+   "price_ts": "2026-11-24T21:00:00+00:00",
+   "unrealized_pnl": 6.665052,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -94,9 +94,9 @@
    "stop": 0.218986,
    "target": 0.06628,
    "risk_usd": 5.0,
-   "last_price": 0.1441,
-   "price_ts": "2026-11-24T20:00:00+00:00",
-   "unrealized_pnl": 4.807859,
+   "last_price": 0.1442,
+   "price_ts": "2026-11-24T21:00:00+00:00",
+   "unrealized_pnl": 4.794762,
    "opened_at": "2026-11-06T00:00:00+00:00",
    "max_exit_at": "2026-12-05T00:00:00+00:00",
    "closed_at": null,
@@ -117,9 +117,9 @@
    "stop": 104.965806,
    "target": 52.838621,
    "risk_usd": 5.0,
-   "last_price": 69.33,
-   "price_ts": "2026-11-24T20:00:00+00:00",
-   "unrealized_pnl": 8.672638,
+   "last_price": 69.44,
+   "price_ts": "2026-11-24T21:00:00+00:00",
+   "unrealized_pnl": 8.630433,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -140,9 +140,9 @@
    "stop": 5.254487,
    "target": -0.303194,
    "risk_usd": 5.0,
-   "last_price": 2.862,
-   "price_ts": "2026-11-24T20:00:00+00:00",
-   "unrealized_pnl": 3.609659,
+   "last_price": 2.865,
+   "price_ts": "2026-11-24T21:00:00+00:00",
+   "unrealized_pnl": 3.598863,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -163,9 +163,9 @@
    "stop": 1.721013,
    "target": 0.562096,
    "risk_usd": 5.0,
-   "last_price": 1.254,
-   "price_ts": "2026-11-24T20:00:00+00:00",
-   "unrealized_pnl": 3.059476,
+   "last_price": 1.253,
+   "price_ts": "2026-11-24T21:00:00+00:00",
+   "unrealized_pnl": 3.076734,
    "opened_at": "2026-11-03T00:00:00+00:00",
    "max_exit_at": "2026-12-02T00:00:00+00:00",
    "closed_at": null,
@@ -732,7 +732,7 @@
   ]
  ],
  "equity_last": [
-  "2026-11-24T21:30:00+00:00",
+  "2026-11-24T22:50:00+00:00",
   1056.04317
  ],
  "approver": {
@@ -2655,7 +2655,7 @@
      "verdict": "KEEP"
     },
     "costs": "0.205 pts/side (USD/oz)",
-    "data_source": "MT5 Vantage seed + Yahoo GCZ26.CMX 1h × k=0.99500 (futures scaled to Vantage level)",
+    "data_source": "MT5 Vantage seed + Yahoo GCG27.CMX 1h × k=0.98692 (futures scaled to Vantage level)",
     "trades": 10,
     "wins": 5,
     "win_rate": 50.0,
@@ -2665,7 +2665,7 @@
     "equity": 1072.8,
     "open_positions": 0,
     "position": null,
-    "last_bar_ts": "2026-11-24 20:00:00+00:00",
+    "last_bar_ts": "2026-11-24 21:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "10/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -2698,7 +2698,7 @@
      "verdict": "WATCH (<30 trades OOS)"
     },
     "costs": "0.205 pts/side (USD/oz)",
-    "data_source": "MT5 Vantage seed + Yahoo GCZ26.CMX 1h × k=0.99500 (futures scaled to Vantage level)",
+    "data_source": "MT5 Vantage seed + Yahoo GCG27.CMX 1h × k=0.98692 (futures scaled to Vantage level)",
     "trades": 0,
     "wins": 0,
     "win_rate": null,
@@ -2714,7 +2714,7 @@
      "stop": 3819.604042,
      "qty": 0.033278
     },
-    "last_bar_ts": "2026-11-23 00:00:00+00:00",
+    "last_bar_ts": "2026-11-24 00:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "0/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -2757,7 +2757,7 @@
     "equity": 997.29,
     "open_positions": 0,
     "position": null,
-    "last_bar_ts": "2026-11-23 00:00:00+00:00",
+    "last_bar_ts": "2026-11-24 00:00:00+00:00",
     "demo_ready": false,
     "demo_progress": "1/30",
     "demo_rule_pt": "demo_ready = verdadeiro só com >= 30 trades de papel FECHADOS e R líquido total (após custos) > 0. Informativo: nada se conecta a conta demo ou corretora."
@@ -2776,7 +2776,7 @@
     "open_risk_usd": 34.840141,
     "open_positions": 9,
     "trades_closed": 14,
-    "as_of": "2026-11-24T21:30:00+00:00",
+    "as_of": "2026-11-24T22:50:00+00:00",
     "by_strategy": [
      {
       "strategy": "SW_BREAKOUT+F",
@@ -2812,7 +2812,7 @@
     "open_risk_usd": 10.0,
     "open_positions": 1,
     "trades_closed": 11,
-    "as_of": "2026-11-24T21:30:00+00:00",
+    "as_of": "2026-11-24T22:50:00+00:00",
     "by_strategy": [
      {
       "strategy": "TF_CLENOW_NAS100_D1",
@@ -2852,7 +2852,7 @@
    "open_risk_usd": 30.0,
    "open_positions": 6,
    "trades_closed": 9,
-   "as_of": "2026-11-24T21:30:00+00:00",
+   "as_of": "2026-11-24T22:50:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT",
@@ -2881,7 +2881,7 @@
    "open_risk_usd": 34.840141,
    "open_positions": 9,
    "trades_closed": 14,
-   "as_of": "2026-11-24T21:30:00+00:00",
+   "as_of": "2026-11-24T22:50:00+00:00",
    "by_strategy": [
     {
      "strategy": "SW_BREAKOUT+F",
@@ -2917,7 +2917,7 @@
    "open_risk_usd": 10.0,
    "open_positions": 1,
    "trades_closed": 11,
-   "as_of": "2026-11-24T21:30:00+00:00",
+   "as_of": "2026-11-24T22:50:00+00:00",
    "by_strategy": [
     {
      "strategy": "TF_CLENOW_NAS100_D1",
@@ -4089,5 +4089,5 @@
    "reason": "stop"
   }
  ],
- "generated_at": "2026-11-24T21:30:58+00:00"
+ "generated_at": "2026-11-24T22:50:11+00:00"
 }
